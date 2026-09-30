@@ -23,3 +23,5 @@ Levels -
     Level 19 - Give a gift(has candle inside it)
 
 Final stage - after all candles collected, there's a cake
+
+Timestamp 1 = 3hours

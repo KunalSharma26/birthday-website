@@ -1,4 +1,5 @@
 import "./styles.css";
+import loading0 from "../assets/images/loading/0_.png"
 import loading10 from "../assets/images/loading/10_.png";
 import loading20 from "../assets/images/loading/20_.png";
 import loading30 from "../assets/images/loading/30_.png";
@@ -9,44 +10,59 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-
-const loadingImages = [loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
-function preloadImages(images) {
-    return Promise.all(
-        images.map(src => {
-            return new Promise((resolve, reject) => {
-                const img = new Image();
-
-                img.onload = resolve;
-                img.onerror = reject;
-
-                img.src = src;
-            });
-        })
-    );
-}
-
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
+let website = document.querySelector(".website");
+let loadingscreen = document.querySelector(".loading-screen");
+import {home} from "./home.js";
+loadingscreen.style.display="none";
+function index(){
+    loadingscreen.style.display="flex";
+    website.style.display="none";
+    const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
+    function preloadImages(images) {
+        return Promise.all(
+            images.map(src => {
+                return new Promise((resolve, reject) => {
+                    const img = new Image();
 
-preloadImages(loadingImages).then(() => {
+                    img.onload = resolve;
+                    img.onerror = reject;
 
-    let index = 0;
+                    img.src = src;
+                });
+            })
+        );
 
-    const interval = setInterval(() => {
+    }
 
-        loadingImage.src = loadingImages[index];
+    preloadImages(loadingImages).then(() => {
 
-        index++;
+        let index = 0;
 
-        if (index >= loadingImages.length) {
-            clearInterval(interval);
-        }
+        const interval = setInterval(() => {
 
-    }, 1000);
-    const inter = setInterval(()=>{
-        loadingImage.style.height="600px";
-        loadingbutton.style.display="block";
-    },11000)
+            loadingImage.src = loadingImages[index];
 
-});
+            index++;
+
+            if (index >= loadingImages.length) {
+                clearInterval(interval);
+            }
+
+        }, 1000);
+        const inter = setTimeout(()=>{
+            loadingImage.style.height="600px";
+            loadingbutton.style.display="block";
+        },12000)
+
+    });
+
+    loadingbutton.addEventListener("click",()=>{
+        home();
+    })
+
+}
+
+// index();
+home();

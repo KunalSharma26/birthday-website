@@ -1,0 +1,29 @@
+.home-header{
+    height: 10vh;
+    width: 100vw;
+    background-color: red;
+}
+
+.home-guidelines{
+    height: 15vh;
+    width: 100vw;
+    background-color: green;
+
+}
+
+.levels-image{
+
+    width: 100vw;
+
+}
+
+.levelbutton{
+    height: 120px;
+    width: 120px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    left: 12%;
+    top: 98%;
+}
