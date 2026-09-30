@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.loading-screen {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    background-color: #F7F1E8;
+}
+
+.loading-image{
+    height: 700px;
+    border: 4px solid #3F263F;
+    border-radius: 10px;
+    transition:height 0.5s ease; 
+}
+.loading-button{
+    display: none;
+    border-radius: 10px;
+    height: 40px;
+    width: 200px;
+    background-color: #D8C9DC;
+    color: #3F263F;
+}
+.loading-button:hover{
+    background-color: #C5AFC9;
+    cursor: pointer;
+}
+
+.website {
+    display: none;
+}
