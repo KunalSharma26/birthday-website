@@ -1,14 +1,57 @@
 let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
-let homee = document.querySelector(".home");
+import { gamestate } from "./gamestate.js";
 let currentlevel = 1;
 import "./home.css";
+import { level1 } from "./level1.js";
+let one = document.querySelector(".level-one-button");
+let two = document.querySelector(".level-two-button");
+let three = document.querySelector(".level-three-button");
+let four = document.querySelector(".level-four-button");
+let five = document.querySelector(".level-five-button");
+let six = document.querySelector(".level-six-button");
+let seven = document.querySelector(".level-seven-button");
+let eight = document.querySelector(".level-eight-button");
+let nine = document.querySelector(".level-nine-button");
+let ten = document.querySelector(".level-ten-button");
+let eleven = document.querySelector(".level-eleven-button");
+let twelve = document.querySelector(".level-twelve-button");
+let thirteen = document.querySelector(".level-thirteen-button");
+let fourteen = document.querySelector(".level-fourteen-button");
+let fifteen = document.querySelector(".level-fifteen-button");
+let sixteen = document.querySelector(".level-sixteen-button");
+let seventeen = document.querySelector(".level-seventeen-button");
+let eighteen = document.querySelector(".level-eighteen-button");
+let nineteen = document.querySelector(".level-nineteen-button");
+let homee = document.querySelector(".home");
 
 function home(){
     loadingscreen.style.display="none";
     homee.style.display="flex";
     homee.style.flexDirection="column";
 
+    const levels = document.querySelectorAll(".levelbutton");
+
+
+
+    levels.forEach((level) => {
+
+        const levelNumber = Number(
+            level.dataset.level
+        );
+
+        if (levelNumber <= gamestate.currentlevel) {
+            level.style.display = "block";
+        } else {
+            level.style.display = "none";
+        }
+
+    });
+    one.addEventListener("click",()=>{
+        homee.style.display="none";
+        level1();
+    })
+
 }
 
-export { home };
+export {home}

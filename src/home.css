@@ -1,14 +1,22 @@
 .home-header{
-    height: 10vh;
-    width: 100vw;
+    height: 15vh;
+    border-radius: 10px;
+    margin:10px;
+    width: 50vw;
     background-color: red;
+    position:absolute ;
+}
+.home{
+    display: none;
 }
 
-.home-guidelines{
-    height: 15vh;
-    width: 100vw;
-    background-color: green;
+.home-header-content{
+    padding: 20px;
+    font-size: 1.5rem;
+}
 
+.home-header-guidelines{
+    padding-left: 20px;
 }
 
 .levels-image{
@@ -24,6 +32,107 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    left: 12%;
-    top: 98%;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+
+.level-two-button{
+    top: 97%;
+    left: 30%;
+}
+
+.level-one-button{
+    left: 10%;
+    top: 93%;
+    display: block;
+}
+
+.level-three-button{
+    top: 99%;
+    left: 48%;
+}
+
+.level-four-button{
+    top: 50%;
+    left: 8%;
+}
+
+.level-five-button{
+    top: 25%;
+    left: 8%;
+}
+
+.level-six-button{
+    top: 15%;
+    left: 21.5%;
+}
+
+.level-seven-button{
+    top: 28%;
+    left: 32%;
+}
+
+.level-eight-button{
+    top: 44%;
+    left: 39.5%;
+}
+
+.level-nine-button{
+    top: 64%;
+    left: 26%;
+}
+
+.level-ten-button{
+    left: 50.5%;
+    top: 63%;
+}
+
+.level-eleven-button{
+    top: 20%;
+    left: 50%;
+}
+
+.level-twelve-button{
+    left: 67%;
+    top: 25%;
+}
+
+.level-thirteen-button{
+    left: 65%;
+    top: 45%;
+}
+
+.level-fourteen-button{
+    left: 67%;
+    top: 67%;
+}
+
+.level-fifteen-button{
+    left: 60%;
+    top: 93%;
+}
+
+.level-sixteen-button{
+    left: 85%;
+    top: 80%;
+}
+
+.level-seventeen-button{
+    left: 87%;
+    top: 58%;
+}
+
+.level-eighteen-button{
+    left: 89%;
+    top: 35%;
+}
+
+.level-nineteen-button{
+    left: 85.5%;
+    top: 6%;
+}
+
+.level1{
+    display: none;
 }

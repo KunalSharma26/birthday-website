@@ -14,6 +14,8 @@ const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
+let homee = document.querySelector(".home");
+import { level1 } from "./level1.js";
 import {home} from "./home.js";
 loadingscreen.style.display="none";
 function index(){
@@ -65,4 +67,5 @@ function index(){
 }
 
 // index();
-home();
+// home();
+level1();
