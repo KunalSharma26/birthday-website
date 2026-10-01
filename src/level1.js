@@ -31,7 +31,7 @@ function level1(){
         }
         gamestate.currentlevel++;
         gamestate.levelscleared.push(1);
-        gamestate.unlockedlevels.push(1);
+        gamestate.unlockedlevels.push(2);
         gamestate.candles++;
         levelonebutton.style.display="block";
         levelonebutton.addEventListener("click",()=>{

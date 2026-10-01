@@ -4,7 +4,7 @@ Basic UI - top navbar(Title+current number of candles+currentlevel number) + Lev
 Levels - 
     Level 1 - Intro level, just give the candle
     Level 2 - Where were you born? 
-    Level 3 - Memory lane
+    Level 3 - The vault
     Level 4 - Soundtracks
     Level 5 - Say the three magical words to get a candle
     Level 6 - Quiz about her

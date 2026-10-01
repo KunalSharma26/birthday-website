@@ -1,7 +1,7 @@
 let gamestate = {
-    currentlevel: 1,
-    unlockedlevels: [1],
-    levelscleared: [],
+    currentlevel: 2,
+    unlockedlevels: [1,2],
+    levelscleared: [1],
     candles: 0
 };
 export { gamestate };

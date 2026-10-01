@@ -2,6 +2,7 @@ let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
 import { gamestate } from "./gamestate.js";
 let levelone = document.querySelector(".level1");
+import { level2index } from "./level2.js";
 let currentlevel = 1;
 import "./home.css";
 import { level1, level1index } from "./level1.js";
@@ -56,6 +57,10 @@ function home(){
     one.addEventListener("click",()=>{
         homee.style.display="none";
         level1index();
+    })
+    two.addEventListener("click",()=>{
+        homee.style.display="none";
+        level2index();
     })
 
 }
