@@ -23,8 +23,10 @@ let homee = document.querySelector(".home");
 function level1(){
     loadingscreen.style.display="none";
     levelone.style.display="flex";
+    levelonebutton.style.display="none";
     candle.addEventListener("click",()=>{
         if(gamestate.levelscleared[0]==1){
+            levelonebutton.style.display="block";
             return;
         }
         gamestate.currentlevel++;
