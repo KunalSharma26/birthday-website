@@ -1,9 +1,10 @@
 let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
 import { gamestate } from "./gamestate.js";
+let levelone = document.querySelector(".level1");
 let currentlevel = 1;
 import "./home.css";
-import { level1 } from "./level1.js";
+import { level1, level1index } from "./level1.js";
 let one = document.querySelector(".level-one-button");
 let two = document.querySelector(".level-two-button");
 let three = document.querySelector(".level-three-button");
@@ -24,8 +25,11 @@ let seventeen = document.querySelector(".level-seventeen-button");
 let eighteen = document.querySelector(".level-eighteen-button");
 let nineteen = document.querySelector(".level-nineteen-button");
 let homee = document.querySelector(".home");
+let homecurrentlevel = document.querySelector(".home-info-current-level");
+let homecurrentcandle = document.querySelector(".home-info-current-candles");
 
 function home(){
+    levelone.style.display="none";
     loadingscreen.style.display="none";
     homee.style.display="flex";
     homee.style.flexDirection="column";
@@ -47,9 +51,11 @@ function home(){
         }
 
     });
+    homecurrentlevel.textContent=`Current Level: ${gamestate.currentlevel}`;
+    homecurrentcandle.textContent=`Candles Collected: ${gamestate.candles}`;
     one.addEventListener("click",()=>{
         homee.style.display="none";
-        level1();
+        level1index();
     })
 
 }

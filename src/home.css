@@ -5,6 +5,28 @@
     width: 50vw;
     background-color: red;
     position:absolute ;
+    animation:grow 0.6s ease-out;
+}
+
+.home-info{
+    position: absolute;
+    background-color: red;
+    border-radius: 10px;
+    margin: 10px;
+    height: 15vh;
+    width: 300px;
+    left: 60%;
+    animation:grow 0.6s ease-out;
+    padding: 20px;
+}
+
+@keyframes grow{
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
 }
 .home{
     display: none;

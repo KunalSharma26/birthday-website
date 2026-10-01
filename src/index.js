@@ -15,12 +15,11 @@ const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
 let homee = document.querySelector(".home");
-import { level1 } from "./level1.js";
+import { level1, level1index } from "./level1.js";
 import {home} from "./home.js";
 loadingscreen.style.display="none";
 function index(){
     loadingscreen.style.display="flex";
-    website.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
     function preloadImages(images) {
         return Promise.all(
@@ -66,6 +65,7 @@ function index(){
 
 }
 
-// index();
+index();
 // home();
-level1();
+// level1();
+// level1index();

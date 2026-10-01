@@ -1,0 +1,51 @@
+.levelone-header {
+    height: 120px;
+    width: 500px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.level1{
+    align-items: center;
+    flex-direction: column;
+    display: none;
+}
+.levelone-header-content{
+    font-size: 3rem;
+}
+.levelone-header-text{
+    margin-top: 5px;
+    font-size: 1.2rem;
+}
+.levelone-main{
+    display: flex;
+    gap: 400px;
+    margin-top: 100px;
+    align-items: center;
+   
+}
+.levelone-main-container{
+    height: 400px;
+    width: 500px;
+    background-color: red;
+    border-radius: 10px;
+}
+.levelone-main-button{
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    top: 40%;
+    left: 72%;
+    border:none;
+    background: none;
+    cursor:pointer;
+}
+.levelone-button{
+    display: none;
+}
+
