@@ -17,8 +17,10 @@ let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
 let homee = document.querySelector(".home");
 let leveltwo = document.querySelector(".level2");
+let levelone = document.querySelector(".level1");
 
 function level2(){
+    levelone.style.display="none";
     loadingscreen.style.display="none";
     leveltwo.style.display="flex";
 }

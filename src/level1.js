@@ -27,6 +27,10 @@ function level1(){
     candle.addEventListener("click",()=>{
         if(gamestate.levelscleared[0]==1){
             levelonebutton.style.display="block";
+            levelonebutton.addEventListener("click", () => {
+                levelone.style.display = "none";
+                home();
+            });
             return;
         }
         gamestate.currentlevel++;

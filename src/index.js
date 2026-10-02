@@ -66,7 +66,7 @@ function index(){
 
 }
 
-// index();
+index();
 // home();
 // level1();
 // level1index();
