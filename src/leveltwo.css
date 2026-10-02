@@ -1,3 +1,104 @@
 .level2{
     display: none;
 }
+.level-two-header{
+    background-color: red;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.level-two-map{
+    width: 70vw;
+}
+
+.level-two-main{
+    display: flex;
+}
+.level-two-main-buttons{
+    display: none;
+    align-items: center;
+
+}
+.level-two-response {
+    height: 50px;
+    width: 250px;
+    flex-shrink: 0;
+    background-color: red;
+    display: none;
+}
+.punjab{
+    position: absolute;
+    top: 43%;
+    left: 15%;
+}
+.bihar{
+    position: absolute;
+    top: 55%;
+    left: 42%;
+}
+.himachal{
+    position: absolute;
+    top: 37%;
+    left: 30%;
+}
+.west-bengal{
+    position: absolute;
+    top: 73%;
+    left: 50%;
+}
+.maharashtra{
+    position: absolute;
+    top: 95%;
+    left: 9%;
+}
+.pondicherry{
+    position: absolute;
+    top: 125%;
+    left: 40%;
+}
+.punjab, .bihar, .west-bengal, .maharashtra, .himachal, .pondicherry{
+    cursor: pointer;
+}
+
+.punjab-text{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+}
+.bihar-text{
+    position: absolute;
+    top: 45%;
+    left: 40%;
+}
+.himachal-text{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+}
+.west-bengal-text{
+    position: absolute;
+    top: 80%;
+    left: 52%;
+}
+.maharashtra-text{
+    position: absolute;
+    top: 100%;
+    left: 5%;
+}
+.pondicherry-text{
+    position: absolute;
+    top: 130%;
+    left: 35%;
+}
+.leveltwocandlebutton{
+    height: 300px;
+    width: 250px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    position: absolute;
+  
+}

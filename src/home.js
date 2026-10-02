@@ -28,8 +28,10 @@ let nineteen = document.querySelector(".level-nineteen-button");
 let homee = document.querySelector(".home");
 let homecurrentlevel = document.querySelector(".home-info-current-level");
 let homecurrentcandle = document.querySelector(".home-info-current-candles");
+let leveltwo = document.querySelector(".level2");
 
 function home(){
+    leveltwo.style.display="none";
     levelone.style.display="none";
     loadingscreen.style.display="none";
     homee.style.display="flex";
