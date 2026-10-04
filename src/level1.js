@@ -21,9 +21,11 @@ let website = document.querySelector(".website");
 let loadingscreen = document.querySelector(".loading-screen");
 let homee = document.querySelector(".home");
 let leveltwo = document.querySelector(".level2");
+let levelthree = document.querySelector(".level3");
 function level1(){
     loadingscreen.style.display="none";
     leveltwo.style.display = "none";
+    levelthree.style.display="none";
     levelone.style.display="flex";
     levelonebutton.style.display="none";
     candle.addEventListener("click",()=>{

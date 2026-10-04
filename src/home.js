@@ -6,6 +6,7 @@ import { level2index } from "./level2.js";
 let currentlevel = 1;
 import "./home.css";
 import { level1, level1index } from "./level1.js";
+import { level3index } from "./level3.js";
 let one = document.querySelector(".level-one-button");
 let two = document.querySelector(".level-two-button");
 let three = document.querySelector(".level-three-button");
@@ -29,10 +30,11 @@ let homee = document.querySelector(".home");
 let homecurrentlevel = document.querySelector(".home-info-current-level");
 let homecurrentcandle = document.querySelector(".home-info-current-candles");
 let leveltwo = document.querySelector(".level2");
-
+let levelthree = document.querySelector(".level3");
 function home(){
     leveltwo.style.display="none";
     levelone.style.display="none";
+    levelthree.style.display="none";
     loadingscreen.style.display="none";
     homee.style.display="flex";
     homee.style.flexDirection="column";
@@ -63,6 +65,10 @@ function home(){
     two.addEventListener("click",()=>{
         homee.style.display="none";
         level2index();
+    })
+    three.addEventListener("click",()=>{
+        homee.style.display="none";
+        level3index();
     })
 
 }

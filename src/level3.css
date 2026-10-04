@@ -1,0 +1,65 @@
+.level3{
+    display: none;
+}
+
+.level-three-header{
+    height: 100px;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+.level-three-candle-button{
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    left: 67%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.level-three-header-content-one{
+    font-size: 2rem;
+}
+.level-three-header-content-two{
+    font-size: 1.5rem;
+}
+.level-three-questions{
+    height: 150px;
+    width: 100vw;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.level-three-image{
+    height: 500px;
+    width: 500px;
+}
+.level-three-candle{
+    height:400px;
+    width: 400px;
+}
+.level-three-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.level-three-main-candle{
+    display: none;
+    align-items: center;
+}
+.levelthreeform{
+    position: absolute;
+    top: 50%;
+    left: 43%;
+}
+#levelthreeform{
+    height: 60px;
+    width: 200px;
+}

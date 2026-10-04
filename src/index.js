@@ -10,6 +10,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
+import { level3 } from "./level3.js";
 import { level2index,level2 } from "./level2.js";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
@@ -18,9 +19,12 @@ let loadingscreen = document.querySelector(".loading-screen");
 let homee = document.querySelector(".home");
 import { level1, level1index } from "./level1.js";
 import {home} from "./home.js";
+import { level3index } from "./level3.js";
 loadingscreen.style.display="none";
+
 function index(){
     loadingscreen.style.display="flex";
+
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
     function preloadImages(images) {
         return Promise.all(
@@ -66,9 +70,11 @@ function index(){
 
 }
 
-index();
+// index();
 // home();
 // level1();
 // level1index();
 // level2index();
 // level2();
+// level3index();
+level3();
