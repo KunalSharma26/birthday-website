@@ -26,6 +26,7 @@ let valuee = document.querySelector("#levelthreeform");
 let backtomain = document.querySelector(".level-three-backtomain");
 let candle = document.querySelector(".level-three-candle-button");
 let levelfour = document.querySelector(".level4");
+let levelfive = document.querySelector(".level5");
 function level3(){
     candlemain.style.display = "none";
     backtomain.style.display="none";
@@ -33,6 +34,7 @@ function level3(){
     form.style.display = "flex";
     leveltwo.style.display="none";
     levelfour.style.display="none";
+    levelfive.style.display="none";
     loadingscreen.style.display = "none";
     levelthree.style.display="flex";
     levelthree.style.flexDirection="column";

@@ -1,0 +1,42 @@
+.mecha{
+    width: 100vw;
+}
+.level-five-header{
+    height: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.level-five-header-content-one{
+    font-size: 2rem;
+}
+.level-five-header-content-two{
+    font-size: 1.2rem;
+}
+.levelfivecandlebutton{
+    height: 400px;
+    width: 150px;
+    position: absolute;
+    top: 25%;
+    left: 44%;
+    border:none;
+    background: none;
+    cursor: pointer;
+}
+.levelfivecandledisplay{
+    display: none;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+.fiveselect{
+    height: 43px;
+    width: 40px;
+    position: absolute;
+    top: 109%;
+    left: 91%;
+    background:none;
+    border: none;
+}

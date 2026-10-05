@@ -6,11 +6,11 @@ Levels -
     Level 2 - Where were you born? 
     Level 3 - The vault
     Level 4 - Quiz about her 
-    Level 5 - Say the three magical words to get a candle
+    Level 5 - Mecha chameleon find the candle
     Level 6 - Soundtracks
     Level 7 - Quiz about us
     Level 8 - How well do you know me
-    Level 9 - Mecha chameleon find the candle
+    Level 9 - Say the three magical words to get a candle
     Level 10 - Photo puzzle
     Level 11 - 19 things i love about her
     Level 12 - Some statistics about her
