@@ -22,11 +22,17 @@ let levelone = document.querySelector(".level1");
 let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfourcandledisplay = document.querySelector(".level-four-candle");
+let levelfourcandlebutton = document.querySelector(".levelfourcandlebutton");
 let fourbacktomain = document.querySelector(".fourbacktomain");
 let correctfourone = document.querySelector(".correct-four-one");
 let correctfourtwo = document.querySelector(".correct-four-two");
+let correctfourthree = document.querySelector(".correct-four-three");
+let correctfourfour = document.querySelector(".correct-four-four");
 let questionone = document.querySelector(".level-four-question-one");
 let questiontwo = document.querySelector(".level-four-question-two");
+let questionthree = document.querySelector(".level-four-question-three");
+let questionfour = document.querySelector(".level-four-question-four");
+let yay = document.querySelector(".yay");
 function level4(){
     loadingscreen.style.display = "none";
     levelone.style.display="none";
@@ -37,15 +43,46 @@ function level4(){
     levelfourcandledisplay.style.display="none";
     fourbacktomain.style.display="none";
     questiontwo.style.display="none";
+    questionthree.style.display="none";
+    questionfour.style.display="none";
     questionone.style.display="flex";
+    yay.style.display="none";
     correctfourone.addEventListener("click",()=>{
         questionone.style.display="none";
         questiontwo.style.display="flex";
     })
     correctfourtwo.addEventListener("click",()=>{
         questiontwo.style.display="none";
-        // questionthree.style.display="flex";
+        questionthree.style.display="flex";
     })
+    correctfourthree.addEventListener("click",()=>{
+        questionthree.style.display="none";
+        questionfour.style.display="flex";
+    })
+    correctfourfour.addEventListener("click",()=>{
+        questionfour.style.display="none";
+        yay.style.display="flex";
+        levelfourcandledisplay.style.display="flex";
+    })
+    levelfourcandlebutton.addEventListener("click",()=>{
+        if(gamestate.levelscleared[3]==4){
+            fourbacktomain.style.display = "flex";
+            fourbacktomain.addEventListener("click",()=>{
+                home();
+            })
+            return;
+        }
+        
+        gamestate.currentlevel++;
+        gamestate.unlockedlevels.push(5);
+        gamestate.levelscleared.push(4);
+        gamestate.candles++;
+        fourbacktomain.style.display = "flex";
+        fourbacktomain.addEventListener("click", () => {
+            home();
+        });
+    })
+
 }
 
 

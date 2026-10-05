@@ -19,7 +19,7 @@
 .level-four-header-content-two{
     font-size: 1.3rem;
 }
-.level-four-question-one, .level-four-question-two{
+.level-four-question-one, .level-four-question-two, .level-four-question-three, .level-four-question-four{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
     height: 50px;
     margin: 20px;
 }
-.level-four-question-one-content, .level-four-question-two-content{
+.level-four-question-one-content, .level-four-question-two-content, .level-four-question-three-content, .yay, .level-four-question-four-content{
     font-size: 2rem;
     margin-top: 50px;
 }
@@ -57,9 +57,21 @@
 .wrong:active{
     background-color: red;
 }
+.fourorange:active{
+    background-color: orange;
+}
 .correct-four-one:active{
     background-color: green;
 }
 .correct-four-two:active{
     background-color: green;
+}
+.correct-four-three:active{
+    background-color: green;
+}
+.correct-four-four:active{
+    background-color: green;
+}
+.yay{
+    margin-top: 200px;
 }

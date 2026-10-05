@@ -73,6 +73,10 @@ function home(){
         homee.style.display="none";
         level3index();
     })
+    four.addEventListener("click",()=>{
+        homee.style.display="none";
+        level4index();
+    })
 
 }
 

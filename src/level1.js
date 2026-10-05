@@ -22,10 +22,12 @@ let loadingscreen = document.querySelector(".loading-screen");
 let homee = document.querySelector(".home");
 let leveltwo = document.querySelector(".level2");
 let levelthree = document.querySelector(".level3");
+let levelfour = document.querySelector(".level4");
 function level1(){
     loadingscreen.style.display="none";
     leveltwo.style.display = "none";
     levelthree.style.display="none";
+    levelfour.style.display="none";
     levelone.style.display="flex";
     levelonebutton.style.display="none";
     candle.addEventListener("click",()=>{

@@ -71,7 +71,7 @@ function index(){
 
 }
 
-// index();
+index();
 // home();
 // level1();
 // level1index();
@@ -79,5 +79,5 @@ function index(){
 // level2();
 // level3index();
 // level3();       
-level4();
+// level4();
 // level4index();

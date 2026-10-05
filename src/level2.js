@@ -35,8 +35,10 @@ let leveltwomain = document.querySelector(".level-two-main-buttons");
 let leveltwomainbutton = document.querySelector(".level-two-main-button");
 let leveltwocandlebutton = document.querySelector(".leveltwocandlebutton");
 let levelthree = document.querySelector(".level3");
+let levelfour = document.querySelector(".level4");
 function level2(){
     levelthree.style.display="none";
+    levelfour.style.display="none";
     levelone.style.display="none";
     leveltwomainbutton.style.display="none";
     leveltwomain.style.display="none";
