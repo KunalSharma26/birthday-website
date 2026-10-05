@@ -1,0 +1,65 @@
+.level4 {
+    display: none;
+}
+
+.level-four-header{
+    height: 150px;
+    width: 100vw;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.level-four-header-content-one {
+    font-size: 3rem !important;
+}
+.level-four-header-content-two{
+    font-size: 1.3rem;
+}
+.level-four-question-one, .level-four-question-two{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fourbutton{
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+}
+.level-four-question-one-content, .level-four-question-two-content{
+    font-size: 2rem;
+    margin-top: 50px;
+}
+
+.fourmain{
+    display: flex;
+    justify-content: space-evenly;
+}
+.level-four-candle{
+    display: flex;
+    align-items: center;
+}
+.levelfourcandlebutton{
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    background: none;
+    left: 61.5%;
+    cursor: pointer;
+    border: none;
+}
+.fourbutton{
+    cursor: pointer;
+}
+.wrong:active{
+    background-color: red;
+}
+.correct-four-one:active{
+    background-color: green;
+}
+.correct-four-two:active{
+    background-color: green;
+}

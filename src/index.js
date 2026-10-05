@@ -12,6 +12,7 @@ import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
 import { level3 } from "./level3.js";
 import { level2index,level2 } from "./level2.js";
+import { level4,level4index } from "./level4.js";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -77,4 +78,6 @@ function index(){
 // level2index();
 // level2();
 // level3index();
-level3();
+// level3();       
+level4();
+// level4index();
