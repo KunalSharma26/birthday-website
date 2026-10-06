@@ -21,7 +21,7 @@ let three = document.querySelector(".level-three-button");
 let four = document.querySelector(".level-four-button");
 let five = document.querySelector(".level-five-button");
 let six = document.querySelector(".level-six-button");
-
+let seven = document.querySelector(".level-seven-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -35,7 +35,7 @@ let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 
 function home(){
-
+    console.log("HOME");
     leveltwo.style.display = "none";
     levelfour.style.display = "none";
     levelone.style.display = "none";

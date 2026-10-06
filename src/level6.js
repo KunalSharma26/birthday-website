@@ -45,6 +45,7 @@ let correctsixtwo = document.querySelector(".correct-six-two");
 let correctsixthree = document.querySelector(".correct-six-three")
 
 function level6() {
+    console.log("LEVEL 6");
     loadingscreen.style.display = "none";
     levelone.style.display = "none";
     leveltwo.style.display = "none";
@@ -91,6 +92,7 @@ function level6() {
         if (gamestate.levelscleared[5] == 6) {
             sixbacktomain.style.display = "flex";
             sixbacktomain.addEventListener("click", () => {
+                levelsix.style.display = "none";
                 home();
             })
             return;
@@ -102,6 +104,7 @@ function level6() {
         savegamestate();
         sixbacktomain.style.display = "flex";
         sixbacktomain.addEventListener("click", () => {
+            levelsix.style.display = "none";
             home();
         });
     })

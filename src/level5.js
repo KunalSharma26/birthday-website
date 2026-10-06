@@ -30,13 +30,14 @@ let fiveselect = document.querySelector(".fiveselect");
 let levelfivecandlebutton = document.querySelector(".levelfivecandlebutton");
 let fivebacktomain = document.querySelector(".fivebacktomain");
 function level5(){
+    console.log("LEVEL 5");
     loadingscreen.style.display = "none";
     levelone.style.display="none";
     leveltwo.style.display="none";
     levelthree.style.display="none";
     levelfour.style.display="none";
     levelsix.style.display="none";
-    levellseven.style.display="none";
+    levelseven.style.display="none";
     levelfive.style.display="flex";
     levelfive.style.flexDirection="column";
     levelfivecandledisplay.style.display="none";

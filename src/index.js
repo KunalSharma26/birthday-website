@@ -31,6 +31,7 @@ let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
+
 function index(){
     loadingscreen.style.display="flex";
     levelone.style.display="none";
