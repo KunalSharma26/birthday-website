@@ -1,0 +1,77 @@
+.disc{
+    animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{transform: rotate(360deg);}
+}
+.level-six-header{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    gap: 10px;
+    background-color: red;
+}
+
+.level-six-header-content-one{
+    font-size: 2rem;
+}
+.level-six-header-content-two{
+    font-size: 1.2rem;
+}
+.level-six-question-main{
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    justify-content: center;
+    margin-top: 40px;
+    gap: 30px;
+}
+.level-six-question-one, .level-six-question-two, .level-six-question-three, .level-six-question-four{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sixbutton{
+    height: 50px;
+    width: 200px;
+}
+.wrong:active{
+    background-color: red;
+}
+.correct-six-one:active{
+    background-color: green;
+}
+.correct-six-two:active{
+    background-color: green;
+}
+.correct-six-three:active{
+    background-color: green;
+}
+.correct-six-four:active{
+    background-color: green;
+}
+.sixyay{
+    font-size: 3rem;
+}
+.level-six-candle{
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+.levelsixcandlebutton{
+    position: absolute;
+    height: 400px;
+    width: 150px;
+    background: none;
+    left: 66.5%;
+    cursor: pointer;
+    border: none;
+}

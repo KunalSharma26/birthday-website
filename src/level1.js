@@ -24,12 +24,14 @@ let leveltwo = document.querySelector(".level2");
 let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
+let levelsix = document.querySelector(".level6");
 function level1(){
     loadingscreen.style.display="none";
     leveltwo.style.display = "none";
     levelthree.style.display="none";
     levelfour.style.display="none";
     levelfive.style.display="none";
+    levelsix.style.display="none";
     levelone.style.display="flex";
     levelonebutton.style.display="none";
     candle.addEventListener("click",()=>{
@@ -94,10 +96,10 @@ function level1index(){
 
     });
 
-    loadingbutton.addEventListener("click",()=>{
+    loadingbutton.onclick=()=>{
         homee.style.display="none";
         level1();
-    })
+    }
 
 }
 

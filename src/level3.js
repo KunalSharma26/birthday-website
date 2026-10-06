@@ -27,6 +27,7 @@ let backtomain = document.querySelector(".level-three-backtomain");
 let candle = document.querySelector(".level-three-candle-button");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
+let levelsix = document.querySelector(".level6");
 function level3(){
     candlemain.style.display = "none";
     backtomain.style.display="none";
@@ -35,6 +36,7 @@ function level3(){
     leveltwo.style.display="none";
     levelfour.style.display="none";
     levelfive.style.display="none";
+    levelsix.style.display="none";
     loadingscreen.style.display = "none";
     levelthree.style.display="flex";
     levelthree.style.flexDirection="column";
@@ -108,10 +110,10 @@ function level3index(){
 
     });
 
-    loadingbutton.addEventListener("click",()=>{
+    loadingbutton.onclick=()=>{
         homee.style.display="none";
         level3();
-    })
+    }
 }
 
 export { level3, level3index}

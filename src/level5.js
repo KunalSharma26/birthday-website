@@ -106,10 +106,10 @@ function level5index(){
 
     });
 
-    loadingbutton.addEventListener("click",()=>{
+    loadingbutton.onclick=()=>{
         homee.style.display="none";
         level5();
-    })
+    }
 }
 
 export {level5,level5index}
