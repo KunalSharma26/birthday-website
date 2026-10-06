@@ -22,6 +22,8 @@ let levelone = document.querySelector(".level1");
 let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
+let levelseven = document.querySelector(".level7");
+let levelsix = document.querySelector(".level6");
 let levelfivecandledisplay = document.querySelector(".levelfivecandledisplay");
 let mecha = document.querySelector(".mecha");
 let fiveselect = document.querySelector(".fiveselect");
@@ -33,6 +35,8 @@ function level5(){
     leveltwo.style.display="none";
     levelthree.style.display="none";
     levelfour.style.display="none";
+    levelsix.style.display="none";
+    levellseven.style.display="none";
     levelfive.style.display="flex";
     levelfive.style.flexDirection="column";
     levelfivecandledisplay.style.display="none";

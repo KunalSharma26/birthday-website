@@ -24,6 +24,7 @@ let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
+let levelseven = document.querySelector(".level7");
 
 import song1 from "../assets/audio/dracula.mp3";
 const songone = new Audio(song1);
@@ -44,7 +45,6 @@ let correctsixtwo = document.querySelector(".correct-six-two");
 let correctsixthree = document.querySelector(".correct-six-three")
 
 function level6() {
-    console.log("level6called");
     loadingscreen.style.display = "none";
     levelone.style.display = "none";
     leveltwo.style.display = "none";
@@ -52,6 +52,7 @@ function level6() {
     songone.play();
     levelfour.style.display = "none";
     levelfive.style.display = "none";
+    levelseven.style.display="none";
     levelsix.style.display = "flex";
     levelsixcandledisplay.style.display = "none"
     levelsix.style.flexDirection = "column";

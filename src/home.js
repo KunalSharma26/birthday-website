@@ -11,6 +11,7 @@ import { level3index } from "./level3.js";
 import { level4index } from "./level4.js";
 import { level5index } from "./level5.js";
 import { level6index } from "./level6.js";
+import { level7index } from "./level7.js";
 
 import "./home.css";
 
@@ -31,7 +32,7 @@ let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
-localStorage.getItem("gamestate")
+let levelseven = document.querySelector(".level7");
 
 function home(){
 
@@ -41,6 +42,7 @@ function home(){
     levelthree.style.display = "none";
     levelfive.style.display = "none";
     levelsix.style.display = "none";
+    levelseven.style.display="none";
 
     loadingscreen.style.display = "none";
 
@@ -95,6 +97,11 @@ five.addEventListener("click",()=>{
 six.addEventListener("click",()=>{
     homee.style.display="none";
     level6index();
+})
+
+seven.addEventListener("click",()=>{
+    homee.style.display="none";
+    level7index();
 })
 
 

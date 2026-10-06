@@ -28,6 +28,7 @@ let candle = document.querySelector(".level-three-candle-button");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
+let levelseven = document.querySelector(".level7");
 function level3(){
     candlemain.style.display = "none";
     backtomain.style.display="none";
@@ -37,6 +38,7 @@ function level3(){
     levelfour.style.display="none";
     levelfive.style.display="none";
     levelsix.style.display="none";
+    levelseven.style.display="none";
     loadingscreen.style.display = "none";
     levelthree.style.display="flex";
     levelthree.style.flexDirection="column";
