@@ -23,10 +23,20 @@ import { level1, level1index } from "./level1.js";
 import {home} from "./home.js";
 import { level3index } from "./level3.js";
 loadingscreen.style.display="none";
-
+let levelone = document.querySelector(".level1");
+let leveltwo = document.querySelector(".level2");
+let levelthree = document.querySelector(".level3");
+let levelfour = document.querySelector(".level4");
+let levelfive = document.querySelector(".level5");
 function index(){
     loadingscreen.style.display="flex";
-
+    levelone.style.display="none";
+    leveltwo.style.display="none";
+    levelthree.style.display="none";
+    levelfour.style.display="none";
+    levelfive.style.display="none";
+    website.style.display="none";
+    homee.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
     function preloadImages(images) {
         return Promise.all(
