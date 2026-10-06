@@ -12,7 +12,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate } from "./gamestate";
+import { gamestate,savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -98,6 +98,7 @@ function level6() {
         gamestate.unlockedlevels.push(7);
         gamestate.levelscleared.push(6);
         gamestate.candles++;
+        savegamestate();
         sixbacktomain.style.display = "flex";
         sixbacktomain.addEventListener("click", () => {
             home();

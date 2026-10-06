@@ -31,7 +31,7 @@ let levelthree = document.querySelector(".level3");
 let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
-
+localStorage.getItem("gamestate")
 
 function home(){
 

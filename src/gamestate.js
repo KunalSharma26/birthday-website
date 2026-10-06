@@ -1,8 +1,16 @@
 let gamestate = {
-    currentlevel: 6,
-    unlockedlevels: [1,2,3,4,5,6],
-    levelscleared: [1,2,3,4,5],
-    candles: 5
+    currentlevel: 1,
+    unlockedlevels: [1],
+    levelscleared: [],
+    candles: 0
 };
-export { gamestate };
+const savedgamestate = localStorage.getItem("gamestate");
+
+if (savedgamestate) {
+    Object.assign(gamestate, JSON.parse(savedgamestate));
+}
+function savegamestate() {
+    localStorage.setItem("gamestate", JSON.stringify(gamestate));
+}
+export { gamestate,savegamestate };
 

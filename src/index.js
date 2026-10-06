@@ -85,8 +85,8 @@ function index(){
 
 }
 
-index();
-// home();
+// index();
+home();
 // level1();
 // level1index();
 // level2index();
