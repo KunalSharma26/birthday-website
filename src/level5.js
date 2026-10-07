@@ -25,6 +25,7 @@ let levelfive = document.querySelector(".level5");
 let levelseven = document.querySelector(".level7");
 let levelsix = document.querySelector(".level6");
 let leveleight = document.querySelector(".level8");
+let levelnine = document.querySelector(".level9");
 let levelfivecandledisplay = document.querySelector(".levelfivecandledisplay");
 let mecha = document.querySelector(".mecha");
 let fiveselect = document.querySelector(".fiveselect");
@@ -40,6 +41,7 @@ function level5(){
     levelsix.style.display="none";
     leveleight.style.display="none";
     levelseven.style.display="none";
+    levelnine.style.display="none";
     levelfive.style.display="flex";
     levelfive.style.flexDirection="column";
     levelfivecandledisplay.style.display="none";
@@ -81,6 +83,7 @@ function level5index(){
     levelsix.style.display = "none";
     leveleight.style.display="none";
     levelseven.style.display="none";
+    levelnine.style.display="none";
     loadingscreen.style.display="flex";
     loadingbutton.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];

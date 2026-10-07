@@ -10,9 +10,9 @@ Levels -
     Level 6 - Soundtracks
     Level 7 - Catch the candle
     Level 8 - Say the three magical words to get a candle
-    Level 9 - Quiz about us
+    Level 9 - 19 things i love about her
     Level 10 - Photo puzzle
-    Level 11 - 19 things i love about her
+    Level 11 - Quiz about us
     Level 12 - Some statistics about her
     Level 13 - How well do you know me
     Level 14 - You as a animal/flower etc etc

@@ -40,6 +40,7 @@ let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
+let levelnine = document.querySelector(".level9");
 function level2(){
     levelthree.style.display="none";
     levelfour.style.display="none";
@@ -48,6 +49,7 @@ function level2(){
     levelseven.style.display="none";
     leveleight.style.display="none";
     levelone.style.display="none";
+    levelnine.style.display="none";
     leveltwomainbutton.style.display="none";
     leveltwomain.style.display="none";
     loadingscreen.style.display="none";
@@ -132,6 +134,7 @@ function level2index(){
     levelsix.style.display = "none";
     levelseven.style.display="none";
     leveleight.style.display="none";
+    levelnine.style.display="none";
     loadingscreen.style.display="flex";
     loadingbutton.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];

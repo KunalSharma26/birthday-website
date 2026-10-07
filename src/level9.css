@@ -1,0 +1,101 @@
+.level-nine-header {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    padding-top: 10px;
+    background-color: red;
+    align-items: center;
+}
+
+.level-nine-header-content-one {
+    font-size: 2rem;
+}
+
+.level-nine-header-content-two {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.nine{
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.level-nine-main {
+    margin-top: 100px;
+    padding: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    gap: 20px;
+}
+
+
+
+/* CARD */
+
+.card {
+    height: 300px;
+    width: 300px;
+
+    perspective: 1000px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+
+/* BOTH SIDES */
+
+.card-content-one,
+.card-content-two {
+    position: absolute;
+
+    height: 300px;
+    width: 300px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    backface-visibility: hidden;
+
+    transition: transform 0.8s ease;
+}
+
+
+/* FRONT */
+
+.card-content-one {
+    background-color: red;
+}
+
+
+/* BACK */
+
+.card-content-two {
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+
+
+/* HOVER */
+
+.card:hover .card-content-one {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-content-two {
+    transform: rotateY(0deg);
+}
+
+.levelninecandle{
+    cursor: pointer;
+}

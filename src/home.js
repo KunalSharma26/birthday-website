@@ -13,6 +13,7 @@ import { level5index } from "./level5.js";
 import { level6index } from "./level6.js";
 import { level7index } from "./level7.js";
 import { level8index } from "./level8.js";
+import { level9index } from "./level9.js";
 
 import "./home.css";
 
@@ -37,6 +38,7 @@ let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
+let levelnine = document.querySelector(".level9");
 
 function home() {
     console.log("HOME");
@@ -48,6 +50,7 @@ function home() {
     levelsix.style.display = "none";
     levelseven.style.display = "none";
     leveleight.style.display="none";
+    levelnine.style.display="none";
 
     loadingscreen.style.display = "none";
 
@@ -112,6 +115,11 @@ seven.addEventListener("click", () => {
 eight.addEventListener("click",()=>{
     homee.style.display="none";
     level8index();
+})
+
+nine.addEventListener("click",()=>{
+    homee.style.display="none";
+    level9index();
 })
 
 
