@@ -1,0 +1,39 @@
+.level-seven-header{
+    display: flex;
+    height: 100px;
+    background-color: red;
+    align-items: center;
+    padding-top: 10px;
+    flex-direction: column;
+
+}
+.level-seven-header-content-one{
+    font-size: 2rem;
+}
+.level-seven-header-content-two{
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+.level-seven-main{
+    height: 500px;
+    width: 90vw;
+    position: relative;
+    
+}
+.level-seven-image{
+    position: absolute;
+    cursor: pointer;
+    transition: left 0.5s ease, top 0.5s ease;
+}
+.sevencandlebutton{
+    height: 150px;
+    width: 100px;
+    left: 1.2%;
+    background: none;
+    position: absolute;
+}
+.sevenback{
+    justify-content: center;
+    align-items: center;
+    height: 30vw;
+}

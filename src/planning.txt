@@ -8,13 +8,13 @@ Levels -
     Level 4 - Quiz about her 
     Level 5 - Mecha chameleon find the candle
     Level 6 - Soundtracks
-    Level 7 - Quiz about us
-    Level 8 - How well do you know me
-    Level 9 - Say the three magical words to get a candle
+    Level 7 - Catch the candle
+    Level 8 - Say the three magical words to get a candle
+    Level 9 - Quiz about us
     Level 10 - Photo puzzle
     Level 11 - 19 things i love about her
     Level 12 - Some statistics about her
-    Level 13 - Catch the candle
+    Level 13 - How well do you know me
     Level 14 - You as a animal/flower etc etc
     Level 15 - What's in her bag
     Level 16 - wikipedia page about her

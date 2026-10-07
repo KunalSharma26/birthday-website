@@ -25,6 +25,12 @@ let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
+let leveleight = document.querySelector(".level8");
+let image = document.querySelector(".level-seven-image");
+let main = document.querySelector(".level-seven-main");
+let area = document.querySelector(".level-seven-main");
+let back = document.querySelector(".sevenback");
+let sevenbacktomain = document.querySelector(".sevenbacktomain");
 
 function level7(){
     loadingscreen.style.display = "none";
@@ -34,11 +40,65 @@ function level7(){
     levelfour.style.display = "none";
     levelfive.style.display = "none";
     levelsix.style.display = "none";
+    leveleight.style.display="none";
+    back.style.display="none";
+    main.style.display="flex";
     levelseven.style.display="flex";
     levelseven.style.flexDirection="column";
+    
+    const maxX = area.clientWidth - image.offsetWidth;
+    const maxY = area.clientHeight - image.offsetHeight;
+    let interval;
+    function moveCandle() {
+
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+
+        image.style.left = `${randomX}px`;
+        image.style.top = `${randomY}px`;
+        
+
+        const randomTime = 400 + Math.random() * 500;
+
+        interval = setTimeout(moveCandle, randomTime);
+    }
+
+    moveCandle();
+    image.addEventListener("click",()=>{
+        main.style.display="none";
+
+        if (gamestate.levelscleared[6] == 7) {
+            back.style.display="flex";
+            sevenbacktomain.addEventListener("click", () => {
+                levelseven.style.display = "none";
+                home();
+            })
+            return;
+        }
+        gamestate.currentlevel++;
+        gamestate.unlockedlevels.push(8);
+        gamestate.levelscleared.push(7);
+        gamestate.candles++;
+        savegamestate();
+        back.style.display = "flex";
+        sevenbacktomain.addEventListener("click", () => {
+            levelseven.style.display = "none";
+            home();
+        });
+    })
+
 }
 
 function level7index() {
+    
+    levelone.style.display = "none";
+    leveltwo.style.display = "none";
+    levelthree.style.display = "none";
+    levelfour.style.display = "none";
+    levelfive.style.display = "none";
+    levelsix.style.display = "none";
+    levelseven.style.display = "none";
+    leveleight.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

@@ -1,8 +1,8 @@
 let gamestate = {
-    currentlevel: 1,
-    unlockedlevels: [1],
-    levelscleared: [],
-    candles: 0
+    currentlevel: 7,
+    unlockedlevels: [1,2,3,4,5,6,7],
+    levelscleared: [1,2,3,4,5,6],
+    candles: 6
 };
 const savedgamestate = localStorage.getItem("gamestate");
 

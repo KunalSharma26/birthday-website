@@ -12,6 +12,7 @@ import { level4index } from "./level4.js";
 import { level5index } from "./level5.js";
 import { level6index } from "./level6.js";
 import { level7index } from "./level7.js";
+import { level8index } from "./level8.js";
 
 import "./home.css";
 
@@ -22,6 +23,8 @@ let four = document.querySelector(".level-four-button");
 let five = document.querySelector(".level-five-button");
 let six = document.querySelector(".level-six-button");
 let seven = document.querySelector(".level-seven-button");
+let eight = document.querySelector(".level-eight-button");
+let nine = document.querySelector(".level-nine-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -33,8 +36,9 @@ let levelfour = document.querySelector(".level4");
 let levelfive = document.querySelector(".level5");
 let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
+let leveleight = document.querySelector(".level8");
 
-function home(){
+function home() {
     console.log("HOME");
     leveltwo.style.display = "none";
     levelfour.style.display = "none";
@@ -42,7 +46,8 @@ function home(){
     levelthree.style.display = "none";
     levelfive.style.display = "none";
     levelsix.style.display = "none";
-    levelseven.style.display="none";
+    levelseven.style.display = "none";
+    leveleight.style.display="none";
 
     loadingscreen.style.display = "none";
 
@@ -57,7 +62,7 @@ function home(){
 
         if (levelNumber <= gamestate.currentlevel) {
             level.style.display = "block";
-        } 
+        }
         else {
             level.style.display = "none";
         }
@@ -69,40 +74,45 @@ function home(){
 }
 
 
-one.addEventListener("click",()=>{
-    homee.style.display="none";
+one.addEventListener("click", () => {
+    homee.style.display = "none";
     level1index();
 })
 
-two.addEventListener("click",()=>{
-    homee.style.display="none";
+two.addEventListener("click", () => {
+    homee.style.display = "none";
     level2index();
 })
 
-three.addEventListener("click",()=>{
-    homee.style.display="none";
+three.addEventListener("click", () => {
+    homee.style.display = "none";
     level3index();
 })
 
-four.addEventListener("click",()=>{
-    homee.style.display="none";
+four.addEventListener("click", () => {
+    homee.style.display = "none";
     level4index();
 })
 
-five.addEventListener("click",()=>{
-    homee.style.display="none";
+five.addEventListener("click", () => {
+    homee.style.display = "none";
     level5index();
 })
 
-six.addEventListener("click",()=>{
-    homee.style.display="none";
+six.addEventListener("click", () => {
+    homee.style.display = "none";
     level6index();
 })
 
-seven.addEventListener("click",()=>{
-    homee.style.display="none";
+seven.addEventListener("click", () => {
+    homee.style.display = "none";
     level7index();
 })
 
+eight.addEventListener("click",()=>{
+    homee.style.display="none";
+    level8index();
+})
 
-export {home};
+
+export { home };
