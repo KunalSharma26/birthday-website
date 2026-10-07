@@ -11,12 +11,12 @@ Levels -
     Level 7 - Catch the candle
     Level 8 - Say the three magical words to get a candle
     Level 9 - 19 things i love about her
-    Level 10 - Photo puzzle
+    Level 10 - What's in her bag
     Level 11 - Quiz about us
     Level 12 - Some statistics about her
     Level 13 - How well do you know me
     Level 14 - You as a animal/flower etc etc
-    Level 15 - What's in her bag
+    Level 15 - Photo puzzle
     Level 16 - wikipedia page about her
     Level 17 - Her-O-Meter
     Level 18 - generate poloroid picture
