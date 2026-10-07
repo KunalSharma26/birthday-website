@@ -14,6 +14,7 @@ import { level6index } from "./level6.js";
 import { level7index } from "./level7.js";
 import { level8index } from "./level8.js";
 import { level9index } from "./level9.js";
+import { level10index } from "./level10.js";
 
 import "./home.css";
 
@@ -26,6 +27,7 @@ let six = document.querySelector(".level-six-button");
 let seven = document.querySelector(".level-seven-button");
 let eight = document.querySelector(".level-eight-button");
 let nine = document.querySelector(".level-nine-button");
+let ten = document.querySelector(".level-ten-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -39,6 +41,7 @@ let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
+let levelten = document.querySelector(".level10");
 
 function home() {
     console.log("HOME");
@@ -51,6 +54,7 @@ function home() {
     levelseven.style.display = "none";
     leveleight.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
 
     loadingscreen.style.display = "none";
 
@@ -120,6 +124,11 @@ eight.addEventListener("click",()=>{
 nine.addEventListener("click",()=>{
     homee.style.display="none";
     level9index();
+})
+
+ten.addEventListener("click",()=>{
+    homee.style.display="none";
+    level10index();
 })
 
 

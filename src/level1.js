@@ -28,6 +28,7 @@ let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
+let levelten = document.querySelector(".level10");
 function level1(){
     loadingscreen.style.display="none";
     leveltwo.style.display = "none";
@@ -38,6 +39,7 @@ function level1(){
     levelseven.style.display="none";
     leveleight.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
     levelone.style.display="flex";
     levelonebutton.style.display="none";
     candle.addEventListener("click",()=>{
@@ -69,6 +71,7 @@ function level1index(){
     levelfive.style.display = "none";
     levelsix.style.display = "none";
     levelseven.style.display="none";
+    levelten.style.display="none";
     leveleight.style.display="none";
     levelnine.style.display="none";
     loadingscreen.style.display="flex";

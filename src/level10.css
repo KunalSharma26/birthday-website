@@ -1,0 +1,174 @@
+.level-ten-header{
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    background-color: red;
+    align-items: center;
+
+
+}
+
+.level-ten-header-content-one{
+    font-size: 2rem;
+}
+.level-ten-header-content-two{
+    font-size: 1.2rem;
+}
+
+.star,.staropen{
+    position: absolute;
+    height:700px;
+    top: 5%;
+    cursor: pointer;
+}
+
+.potato{
+    position: absolute;
+    height: 200px;
+    animation: movepotato 2s ease forwards;
+}
+
+@keyframes movepotato {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 20%;
+        left: 45%;
+    }
+}
+
+.duh{
+    background-color: red;
+    display: inline;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.ninepotato{
+
+    top: 15%;
+    left: 46%;
+}
+
+.choco{
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    height: 250px;
+    animation: movechoco 2s ease forwards;
+    transform: rotate(-30deg);
+}
+
+@keyframes movechoco {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 50%;
+        left: 40%;
+    }
+}
+.chococontent{
+    position: absolute;
+    top: 47%;
+    left: 47%;
+}
+.chick{
+    position: absolute;
+    height: 250px;
+    top: 25%;
+    left: 60%;
+    animation: movechick 2s ease forwards;
+}
+@keyframes movechick {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 25%;
+        left: 60%;
+    }
+}
+.chiccontent{
+    position: absolute;
+    top: 19%;
+    left: 60%;
+}
+.phone{
+    position: absolute;
+    height: 300px;
+    top: 30%;
+    left: 80%;
+    animation: phonemove 2s ease forwards;
+}
+@keyframes phonemove {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 30%;
+        left: 80%;
+    }
+}
+.phonecontent{
+    position: absolute;
+    top: 18%;
+    left: 80%;
+}
+.poloroid{
+    position: absolute;
+    height: 300px;
+    top: 60%;
+    left: 55%;
+    animation: poloroidmove 2s ease forwards;
+}
+@keyframes poloroidmove {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 60%;
+        left: 55%;
+    }  
+}
+.poloroidcontent{
+    position: absolute;
+    top: 60%;
+    left: 55%;
+}
+.tencandle{
+    position: absolute;
+    height: 200px;
+    top: 70%;
+    left: 82%;
+    cursor: pointer;
+    animation: tencandlemove 2s ease forwards;
+}
+@keyframes tencandlemove {
+    from{
+        top: 32%;
+        left: 20%;
+    }
+    to{
+        top: 70%;
+        left: 82%;
+    }  
+}
+.tencandlecontent{
+    position: absolute;
+    top: 65%;
+    left: 82%;
+}
+.tenbacktomain{
+    position: absolute;
+    top: 92%;
+    left: 92%;
+}

@@ -27,6 +27,7 @@ let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
+let levelten = document.querySelector(".level10");
 let image = document.querySelector(".level-seven-image");
 let main = document.querySelector(".level-seven-main");
 let area = document.querySelector(".level-seven-main");
@@ -43,6 +44,7 @@ function level7(){
     levelsix.style.display = "none";
     leveleight.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
     back.style.display="none";
     main.style.display="flex";
     levelseven.style.display="flex";
@@ -102,6 +104,7 @@ function level7index() {
     levelseven.style.display = "none";
     leveleight.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

@@ -41,6 +41,7 @@ let levelsix = document.querySelector(".level6");
 let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
+let levelten = document.querySelector(".level10");
 function level2(){
     levelthree.style.display="none";
     levelfour.style.display="none";
@@ -50,6 +51,7 @@ function level2(){
     leveleight.style.display="none";
     levelone.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
     leveltwomainbutton.style.display="none";
     leveltwomain.style.display="none";
     loadingscreen.style.display="none";
