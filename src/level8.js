@@ -28,6 +28,7 @@ let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
+let leveleleven = document.querySelector(".level11");
 let form = document.querySelector(".eightform");
 let main = document.querySelector(".level-eight-main");
 let input = document.querySelector(".eighttext");
@@ -47,6 +48,7 @@ function level8(){
     levelseven.style.display="none";
     leveleight.style.display="flex";
     levelnine.style.display="none";
+    leveleleven.style.display="none";
     leveleight.style.flexDirection="column";
     main.style.display="flex";
     candledisplay.style.display="none";
@@ -101,6 +103,7 @@ function level8index(){
     levelseven.style.display="none";
     leveleight.style.display="none";
     levelnine.style.display="none";
+    levelten.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

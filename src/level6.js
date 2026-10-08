@@ -28,6 +28,7 @@ let levelseven = document.querySelector(".level7");
 let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
+let leveleleven = document.querySelector(".level11");
 
 
 import song1 from "../assets/audio/dracula.mp3";
@@ -61,6 +62,7 @@ function level6() {
     leveleight.style.display="none";
     levelnine.style.display="none";
     levelten.style.display="none";
+    leveleleven.style.display="none";
     levelsix.style.display = "flex";
     levelsixcandledisplay.style.display = "none"
     levelsix.style.flexDirection = "column";
@@ -128,6 +130,7 @@ function level6index() {
     leveleight.style.display="none";
     levelnine.style.display="none";
     levelten.style.display="none";
+    leveleleven.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

@@ -1,0 +1,98 @@
+.level-eleven-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 100vw;
+    background-color: red;
+    padding-top: 10px;
+}
+.level-eleven-header-content-one{
+    font-size: 2rem;
+}
+.level-eleven-header-content-two{
+    font-size: 1.2rem
+}
+.eleven-main{
+    display: flex;
+    justify-content: center;
+}
+.ab{
+    cursor: pointer;
+    animation: pinata-swing 1.5s ease-in-out infinite;
+    transform-origin: top center;
+}
+.ac{
+    animation: pinata-swing 1.5s ease-in-out infinite;
+    transform-origin: top center;
+}
+.ab:active{
+    animation: pinata-hit 0.25s ease;
+}
+
+@keyframes pinata-swing {
+    0% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(8deg);
+    }
+
+    100% {
+        transform: rotate(-8deg);
+    }
+}
+
+@keyframes pinata-hit {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(12deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(7deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+.elevencandle{
+    position: absolute;
+    cursor: pointer;
+    top: 35%;
+    left: 40%;
+    animation: candlemove 1s ease forwards;
+}
+@keyframes candlemove {
+    from{
+        top: 35%;
+        left: 40%;
+    }
+    to{
+        top: 20%;
+        left: 7%;
+    }
+}
+.eleven{
+    display: flex;
+    align-items: center;
+}
+.elevenbacktomain{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}

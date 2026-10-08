@@ -12,14 +12,14 @@ Levels -
     Level 8 - Say the three magical words to get a candle
     Level 9 - 19 things i love about her
     Level 10 - What's in her bag
-    Level 11 - Quiz about us
-    Level 12 - Some statistics about her
-    Level 13 - How well do you know me
-    Level 14 - You as a animal/flower etc etc
+    Level 11 - Piñata
+    Level 12 - generate poloroid picture
+    Level 13 - Quiz about us
+    Level 14 - Her-O-Meter
     Level 15 - Photo puzzle
     Level 16 - wikipedia page about her
-    Level 17 - Her-O-Meter
-    Level 18 - generate poloroid picture
+    Level 17 - Decoration
+    Level 18 - Build a Cake
     Level 19 - Give a gift(has candle inside it)
 
 Final stage - after all candles collected, there's a cake
