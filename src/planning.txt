@@ -13,9 +13,9 @@ Levels -
     Level 9 - 19 things i love about her
     Level 10 - What's in her bag
     Level 11 - Piñata
-    Level 12 - generate poloroid picture
+    Level 12 - Her-O-Meter
     Level 13 - Quiz about us
-    Level 14 - Her-O-Meter
+    Level 14 - generate poloroid picture
     Level 15 - Photo puzzle
     Level 16 - wikipedia page about her
     Level 17 - Decoration

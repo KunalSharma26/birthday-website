@@ -20,6 +20,7 @@ import { level8,level8index } from "./level8.js";
 import { level9,level9index } from "./level9.js";
 import { level10,level10index } from "./level10.js";
 import { level11,level11index } from "./level11.js";
+import { level12,level12index } from "./level12.js";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -40,6 +41,7 @@ let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
+let leveltwelve = document.querySelector(".level12");
 
 function index(){
     loadingscreen.style.display="flex";
@@ -54,6 +56,7 @@ function index(){
     levelnine.style.display="none";
     levelten.style.display="none";
     leveleleven.style.display="none";
+    leveltwelve.style.display="none";
     website.style.display="none";
     homee.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
@@ -125,3 +128,5 @@ index();
 // level10();
 // level11();
 // level11index();
+// level12index();
+// level12();

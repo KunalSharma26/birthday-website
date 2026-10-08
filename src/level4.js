@@ -28,6 +28,7 @@ let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
+let leveltwelve = document.querySelector(".level12");
 let levelfourcandledisplay = document.querySelector(".level-four-candle");
 let levelfourcandlebutton = document.querySelector(".levelfourcandlebutton");
 let fourbacktomain = document.querySelector(".fourbacktomain");
@@ -52,6 +53,7 @@ function level4(){
     levelnine.style.display="none";
     leventen.style.display="none";
     leveleleven.style.display="none";
+    leveltwelve.style.display="none";
     levelfour.style.display="flex";
     levelfour.style.flexDirection="column";
     levelfourcandledisplay.style.display="none";
@@ -113,6 +115,7 @@ function level4index(){
     levelnine.style.display="none";
     levelten.style.display="none";
     leveleleven.style.display="none";
+    leveltwelve.style.display="none";
     loadingscreen.style.display="flex";
     loadingbutton.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];

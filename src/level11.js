@@ -29,6 +29,7 @@ let leveleight = document.querySelector(".level8");
 let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
+let leveltwelve = document.querySelector(".level12");
 let pinata = document.querySelector(".pinata");
 let pinata25 = document.querySelector(".pinata25");
 let pinata50 = document.querySelector(".pinata50");
@@ -50,6 +51,7 @@ function level11(){
     levelnine.style.display = "none";
     levelten.style.display = "none";
     leveleleven.style.display="flex";
+    leveltwelve.style.display="none";
     leveleleven.style.flexDirection="column";
     pinata.style.display="flex";
     pinata25.style.display="none";
@@ -123,6 +125,7 @@ function level11index() {
     levelnine.style.display = "none";
     levelten.style.display = "none";
     leveleleven.style.display="none";
+    leveltwelve.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];
