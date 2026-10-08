@@ -12,7 +12,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate,savegamestate } from "./gamestate";
+import { gamestate, savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -36,7 +36,7 @@ let area = document.querySelector(".level-seven-main");
 let back = document.querySelector(".sevenback");
 let sevenbacktomain = document.querySelector(".sevenbacktomain");
 
-function level7(){
+function level7() {
     loadingscreen.style.display = "none";
     levelone.style.display = "none";
     leveltwo.style.display = "none";
@@ -44,16 +44,16 @@ function level7(){
     levelfour.style.display = "none";
     levelfive.style.display = "none";
     levelsix.style.display = "none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    back.style.display="none";
-    main.style.display="flex";
-    levelseven.style.display="flex";
-    levelseven.style.flexDirection="column";
-    
+    leveleight.style.display = "none";
+    levelnine.style.display = "none";
+    levelten.style.display = "none";
+    leveleleven.style.display = "none";
+    leveltwelve.style.display = "none";
+    back.style.display = "none";
+    main.style.display = "flex";
+    levelseven.style.display = "flex";
+    levelseven.style.flexDirection = "column";
+
     const maxX = area.clientWidth - image.offsetWidth;
     const maxY = area.clientHeight - image.offsetHeight;
     let interval;
@@ -64,19 +64,19 @@ function level7(){
 
         image.style.left = `${randomX}px`;
         image.style.top = `${randomY}px`;
-        
 
-        const randomTime = 400 + Math.random() * 500;
+
+        const randomTime = 300 + Math.random() * 400;
 
         interval = setTimeout(moveCandle, randomTime);
     }
 
     moveCandle();
-    image.addEventListener("click",()=>{
-        main.style.display="none";
+    image.addEventListener("click", () => {
+        main.style.display = "none";
 
         if (gamestate.levelscleared[6] == 7) {
-            back.style.display="flex";
+            back.style.display = "flex";
             sevenbacktomain.addEventListener("click", () => {
                 levelseven.style.display = "none";
                 home();
@@ -98,7 +98,7 @@ function level7(){
 }
 
 function level7index() {
-    
+
     levelone.style.display = "none";
     leveltwo.style.display = "none";
     levelthree.style.display = "none";
@@ -106,11 +106,11 @@ function level7index() {
     levelfive.style.display = "none";
     levelsix.style.display = "none";
     levelseven.style.display = "none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
+    leveleight.style.display = "none";
+    levelnine.style.display = "none";
+    levelten.style.display = "none";
+    leveleleven.style.display = "none";
+    leveltwelve.style.display = "none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];
@@ -158,4 +158,4 @@ function level7index() {
     }
 }
 
-export {level7,level7index}
+export { level7, level7index }
