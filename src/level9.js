@@ -30,6 +30,7 @@ let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
+let levelthirteen = document.querySelector(".level13");
 let card = document.querySelector(".card");
 let cardcontenttwo = document.querySelector(".card-content-two");
 let candle = document.querySelector(".levelninecandle");
@@ -50,6 +51,8 @@ function level9(){
     levelnine.style.display="flex";
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
+    levelthirteen.style.display="none";
+
     levelnine.style.flexDirection="column";
     ninebacktomain.style.display="none";
     candle.addEventListener("click",()=>{
@@ -88,6 +91,7 @@ function level9index(){
     levelten.style.display="none";
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
+    levelthirteen.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

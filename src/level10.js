@@ -30,6 +30,7 @@ let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
+let levelthirteen = document.querySelector(".level13");
 let star = document.querySelector(".star");
 let staropen = document.querySelector(".staropen");
 let potato = document.querySelector(".potato");
@@ -59,6 +60,7 @@ function level10() {
     levelnine.style.display = "none";
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
+    levelthirteen.style.display="none";
     levelten.style.display = "flex";
     levelten.style.flexDirection = "column";
     star.style.display = "flex";
@@ -203,6 +205,7 @@ function level10index() {
     levelten.style.display = "none";
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
+    levelthirteen.style.display="none";
     loadingscreen.style.display = "flex";
     loadingbutton.style.display = "none";
     const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];

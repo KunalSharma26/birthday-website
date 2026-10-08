@@ -17,6 +17,7 @@ import { level9index } from "./level9.js";
 import { level10index } from "./level10.js";
 import { level11index } from "./level11.js";
 import { level12index } from "./level12.js";
+import { level13index } from "./level13.js";
 
 import "./home.css";
 
@@ -32,7 +33,9 @@ let nine = document.querySelector(".level-nine-button");
 let ten = document.querySelector(".level-ten-button");
 let eleven = document.querySelector(".level-eleven-button");
 let twelve = document.querySelector(".level-twelve-button");
+let thirteen = document.querySelector(".level-thirteen-button");
 let homee = document.querySelector(".home");
+
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
 let homecurrentcandle = document.querySelector(".home-info-current-candles");
@@ -48,6 +51,7 @@ let levelnine = document.querySelector(".level9");
 let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
+let levelthirteen = document.querySelector(".level13");
 
 function home() {
     console.log("HOME");
@@ -63,6 +67,7 @@ function home() {
     levelten.style.display="none";
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
+    levelthirteen.style.display="none";
 
     loadingscreen.style.display = "none";
 
@@ -147,6 +152,11 @@ eleven.addEventListener("click",()=>{
 twelve.addEventListener("click",()=>{
     homee.style.display="none";
     level12index();
+})
+
+thirteen.addEventListener("click",()=>{
+    homee.style.display="none";
+    level13index();
 })
 
 
