@@ -21,6 +21,7 @@ Levels -
     Level 17 - Decoration
     Level 18 - Build a Cake
     Level 19 - Give a gift(has candle inside it)
+    Birthday celebration - play happy birthday on guitar
 
 Final stage - after all candles collected, there's a cake
 

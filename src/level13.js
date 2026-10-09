@@ -31,6 +31,13 @@ let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
 let levelthirteen = document.querySelector(".level13");
+let levelfourteen = document.querySelector(".level14");
+let levelfifteen = document.querySelector(".level15");
+let levelsixteen = document.querySelector(".level16");
+let levelseventeen = document.querySelector(".level17");
+let leveleighteen = document.querySelector(".level18");
+let levelnineteen = document.querySelector(".level19");
+let levelfinal = document.querySelector(".levelfinal");
 let question1 = document.querySelector(".tquestion1");
 let question2 = document.querySelector(".tquestion2");
 let question3 = document.querySelector(".tquestion3");
@@ -54,6 +61,13 @@ function level13() {
   levelten.style.display = "none";
   leveleleven.style.display = "none";
   leveltwelve.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
   levelthirteen.style.display = "flex";
   levelthirteen.style.flexDirection = "column";
   question1.style.display = "flex";
@@ -71,7 +85,7 @@ function level13() {
   });
   correct3.addEventListener("click", () => {
     question3.style.display = "none";
-    candle.style.display="flex";
+    candle.style.display = "flex";
   });
   candle.addEventListener("click", () => {
     if (gamestate.levelscleared[12] == 13) {
@@ -110,6 +124,13 @@ function level13index() {
   leveleleven.style.display = "none";
   leveltwelve.style.display = "none";
   levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
   loadingscreen.style.display = "flex";
   loadingbutton.style.display = "none";
   const loadingImages = [

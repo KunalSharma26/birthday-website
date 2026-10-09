@@ -18,6 +18,7 @@ import { level10index } from "./level10.js";
 import { level11index } from "./level11.js";
 import { level12index } from "./level12.js";
 import { level13index } from "./level13.js";
+import { level14index } from "./level14.js";
 
 import "./home.css";
 
@@ -34,8 +35,8 @@ let ten = document.querySelector(".level-ten-button");
 let eleven = document.querySelector(".level-eleven-button");
 let twelve = document.querySelector(".level-twelve-button");
 let thirteen = document.querySelector(".level-thirteen-button");
+let fourteen = document.querySelector(".level-fourteen-button");
 let homee = document.querySelector(".home");
-
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
 let homecurrentcandle = document.querySelector(".home-info-current-candles");
@@ -52,112 +53,127 @@ let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
 let levelthirteen = document.querySelector(".level13");
+let levelfourteen = document.querySelector(".level14");
+let levelfifteen = document.querySelector(".level15");
+let levelsixteen = document.querySelector(".level16");
+let levelseventeen = document.querySelector(".level17");
+let leveleighteen = document.querySelector(".level18");
+let levelnineteen = document.querySelector(".level19");
+let levelfinal = document.querySelector(".levelfinal");
+
 
 function home() {
-    console.log("HOME");
-    leveltwo.style.display = "none";
-    levelfour.style.display = "none";
-    levelone.style.display = "none";
-    levelthree.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display = "none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
+  console.log("HOME");
+  leveltwo.style.display = "none";
+  levelfour.style.display = "none";
+  levelone.style.display = "none";
+  levelthree.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
 
-    loadingscreen.style.display = "none";
+  loadingscreen.style.display = "none";
 
-    homee.style.display = "flex";
-    homee.style.flexDirection = "column";
+  homee.style.display = "flex";
+  homee.style.flexDirection = "column";
 
-    const levels = document.querySelectorAll(".levelbutton");
+  const levels = document.querySelectorAll(".levelbutton");
 
-    levels.forEach((level) => {
+  levels.forEach((level) => {
+    const levelNumber = Number(level.dataset.level);
 
-        const levelNumber = Number(level.dataset.level);
+    if (levelNumber <= gamestate.currentlevel) {
+      level.style.display = "block";
+    } else {
+      level.style.display = "none";
+    }
+  });
 
-        if (levelNumber <= gamestate.currentlevel) {
-            level.style.display = "block";
-        }
-        else {
-            level.style.display = "none";
-        }
-
-    });
-
-    homecurrentlevel.textContent = `Current Level: ${gamestate.currentlevel}`;
-    homecurrentcandle.textContent = `Candles Collected: ${gamestate.candles}`;
+  homecurrentlevel.textContent = `Current Level: ${gamestate.currentlevel}`;
+  homecurrentcandle.textContent = `Candles Collected: ${gamestate.candles}`;
 }
 
-
 one.addEventListener("click", () => {
-    homee.style.display = "none";
-    level1index();
-})
+  homee.style.display = "none";
+  level1index();
+});
 
 two.addEventListener("click", () => {
-    homee.style.display = "none";
-    level2index();
-})
+  homee.style.display = "none";
+  level2index();
+});
 
 three.addEventListener("click", () => {
-    homee.style.display = "none";
-    level3index();
-})
+  homee.style.display = "none";
+  level3index();
+});
 
 four.addEventListener("click", () => {
-    homee.style.display = "none";
-    level4index();
-})
+  homee.style.display = "none";
+  level4index();
+});
 
 five.addEventListener("click", () => {
-    homee.style.display = "none";
-    level5index();
-})
+  homee.style.display = "none";
+  level5index();
+});
 
 six.addEventListener("click", () => {
-    homee.style.display = "none";
-    level6index();
-})
+  homee.style.display = "none";
+  level6index();
+});
 
 seven.addEventListener("click", () => {
-    homee.style.display = "none";
-    level7index();
-})
+  homee.style.display = "none";
+  level7index();
+});
 
-eight.addEventListener("click",()=>{
+eight.addEventListener("click", () => {
+  homee.style.display = "none";
+  level8index();
+});
+
+nine.addEventListener("click", () => {
+  homee.style.display = "none";
+  level9index();
+});
+
+ten.addEventListener("click", () => {
+  homee.style.display = "none";
+  level10index();
+});
+
+eleven.addEventListener("click", () => {
+  homee.style.display = "none";
+  level11index();
+});
+
+twelve.addEventListener("click", () => {
+  homee.style.display = "none";
+  level12index();
+});
+
+thirteen.addEventListener("click", () => {
+  homee.style.display = "none";
+  level13index();
+});
+
+fourteen.addEventListener("click",()=>{
     homee.style.display="none";
-    level8index();
+    level14index();
 })
-
-nine.addEventListener("click",()=>{
-    homee.style.display="none";
-    level9index();
-})
-
-ten.addEventListener("click",()=>{
-    homee.style.display="none";
-    level10index();
-})
-
-eleven.addEventListener("click",()=>{
-    homee.style.display="none";
-    level11index();
-})
-
-twelve.addEventListener("click",()=>{
-    homee.style.display="none";
-    level12index();
-})
-
-thirteen.addEventListener("click",()=>{
-    homee.style.display="none";
-    level13index();
-})
-
 
 export { home };

@@ -35,6 +35,13 @@ let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
 let levelthirteen = document.querySelector(".level13");
+let levelfourteen = document.querySelector(".level14");
+let levelfifteen = document.querySelector(".level15");
+let levelsixteen = document.querySelector(".level16");
+let levelseventeen = document.querySelector(".level17");
+let leveleighteen = document.querySelector(".level18");
+let levelnineteen = document.querySelector(".level19");
+let levelfinal = document.querySelector(".levelfinal");
 
 function level3(){
     candlemain.style.display = "none";
@@ -52,6 +59,13 @@ function level3(){
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
     levelthirteen.style.display="none";
+    levelfourteen.style.display = "none";
+    levelfifteen.style.display = "none";
+    levelsixteen.style.display = "none";
+    levelseventeen.style.display = "none";
+    leveleighteen.style.display = "none";
+    levelnineteen.style.display = "none";
+    levelfinal.style.display = "none";
     loadingscreen.style.display = "none";
     levelthree.style.display="flex";
     levelthree.style.flexDirection="column";
@@ -98,6 +112,13 @@ function level3index(){
     leveleleven.style.display="none";
     leveltwelve.style.display="none";
     levelthirteen.style.display="none";
+    levelfourteen.style.display = "none";
+    levelfifteen.style.display = "none";
+    levelsixteen.style.display = "none";
+    levelseventeen.style.display = "none";
+    leveleighteen.style.display = "none";
+    levelnineteen.style.display = "none";
+    levelfinal.style.display = "none";
     loadingscreen.style.display="flex";
     loadingbutton.style.display="none";
     const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];

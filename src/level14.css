@@ -1,0 +1,133 @@
+.levelfourteenheader{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    align-items: center;
+    height: 100px;
+    padding-top: 10px;
+}
+.levelfourteenheadercontentone{
+    font-size: 2rem;
+}
+.levelfourteenheadercontenttwo{
+    font-size: 1.2rem;
+}
+.p1{
+    position: absolute;
+    height: 430px; 
+    transform: rotate(-6.5deg); 
+    top: 18%; 
+    left: 38%;
+    z-index: -1;
+    /* top: 65%; 
+    left: 5%; */
+    animation: polaroid-drop 2.5s ease-in forwards;
+}
+.p2{
+    position: absolute;
+        height: 430px;
+        transform: rotate(-6.5deg);
+        display: none;
+        top: 19%;
+        left: 38%;
+        z-index: -1;
+        animation: polaroid-drop2 2.5s ease-in forwards;
+}
+@keyframes polaroid-drop2 {
+    0% {
+        top: 19%;
+        left: 38%;
+    }
+
+    85% {
+        top: 65%;
+        left: 38%;
+    }
+
+    92% {
+        top: 63%;
+        left: 38%;
+    }
+
+    100% {
+        top: 67%;
+        left: 75%;
+    }
+}
+@keyframes polaroid-drop {
+    0% {
+        top: 18%;
+        left: 38%;
+    }
+
+    85% {
+        top: 65%;
+        left: 38%;
+    }
+
+    92% {
+        top: 63%;
+        left:38%;
+    }
+
+    100% {
+        top: 67%;
+        left: 5%;
+    }
+}
+.fourteenmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.camera{
+    height: 500px;
+    width: 700px;
+    opacity: 100%;
+}
+.click{
+    height: 50px;
+    width: 200px;
+}
+.click14{
+    position: absolute;
+    top: 50%;
+    left: 36%;
+}
+.fourteencandle{
+    position: absolute;
+    display: none;
+    left: 38%;
+    top: 19%;
+    z-index: -1;
+    animation: polaroid-drop3 2.5s ease-in forwards;
+}
+@keyframes polaroid-drop3 {
+    0% {
+        top: 19%;
+        left: 38%;
+    }
+
+    85% {
+        top: 65%;
+        left: 38%;
+    }
+
+    92% {
+        top: 63%;
+        left: 38%;
+    }
+
+    100% {
+        top: 75%;
+        left: 38%;
+    }
+}
+.fourteenbacktomain{
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+.fourteencandle{
+    cursor: pointer;
+}
