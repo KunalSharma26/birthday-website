@@ -107,7 +107,7 @@ function index(){
 
 }
 
-// index();
+index();
 // home();
 // level1();
 // level1index();
@@ -133,5 +133,5 @@ function index(){
 // level11index();
 // level12index();
 // level12();
-level13();
+// level13();
 // level13index();

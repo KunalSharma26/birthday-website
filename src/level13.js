@@ -31,85 +31,137 @@ let levelten = document.querySelector(".level10");
 let leveleleven = document.querySelector(".level11");
 let leveltwelve = document.querySelector(".level12");
 let levelthirteen = document.querySelector(".level13");
+let question1 = document.querySelector(".tquestion1");
+let question2 = document.querySelector(".tquestion2");
+let question3 = document.querySelector(".tquestion3");
+let correct1 = document.querySelector(".tcorrect1");
+let correct2 = document.querySelector(".tcorrect2");
+let correct3 = document.querySelector(".tcorrect3");
+let candle = document.querySelector(".thirteencandle");
+let thirteenbacktomain = document.querySelector(".thirteenbacktomain");
 
 function level13() {
-    loadingscreen.style.display = "none";
-    levelone.style.display = "none";
-    leveltwo.style.display = "none";
-    levelthree.style.display = "none";
-    levelfour.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display = "none";
-    leveleight.style.display = "none";
-    levelnine.style.display = "none";
-    levelten.style.display = "none";
-    leveleleven.style.display = "none";
-    leveltwelve.style.display = "none";
-    levelthirteen.style.display = "flex";
-    levelthirteen.style.flexDirection = "column";
+  loadingscreen.style.display = "none";
+  levelone.style.display = "none";
+  leveltwo.style.display = "none";
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "flex";
+  levelthirteen.style.flexDirection = "column";
+  question1.style.display = "flex";
+  question2.style.display = "none";
+  question3.style.display = "none";
+  candle.style.display = "none";
+  thirteenbacktomain.style.display = "none";
+  correct1.addEventListener("click", () => {
+    question1.style.display = "none";
+    question2.style.display = "flex";
+  });
+  correct2.addEventListener("click", () => {
+    question2.style.display = "none";
+    question3.style.display = "flex";
+  });
+  correct3.addEventListener("click", () => {
+    question3.style.display = "none";
+    candle.style.display="flex";
+  });
+  candle.addEventListener("click", () => {
+    if (gamestate.levelscleared[12] == 13) {
+      thirteenbacktomain.style.display = "flex";
+      thirteenbacktomain.addEventListener("click", () => {
+        levelthirteen.style.display = "none";
+        home();
+      });
+      return;
+    }
+    gamestate.currentlevel++;
+    gamestate.unlockedlevels.push(14);
+    gamestate.levelscleared.push(13);
+    gamestate.candles++;
+    savegamestate();
+    thirteenbacktomain.style.display = "flex";
+    thirteenbacktomain.addEventListener("click", () => {
+      levelthirteen.style.display = "none";
+      home();
+    });
+  });
 }
 
 function level13index() {
-    loadingscreen.style.display = "none";
-    levelone.style.display = "none";
-    leveltwo.style.display = "none";
-    levelthree.style.display = "none";
-    levelfour.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display = "none";
-    leveleight.style.display = "none";
-    levelnine.style.display = "none";
-    levelten.style.display = "none";
-    leveleleven.style.display = "none";
-    leveltwelve.style.display = "none";
-    levelthirteen.style.display = "none";
-    loadingscreen.style.display = "flex";
-    loadingbutton.style.display = "none";
-    const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];
-    function preloadImages(images) {
-        return Promise.all(
-            images.map(src => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
+  loadingscreen.style.display = "none";
+  levelone.style.display = "none";
+  leveltwo.style.display = "none";
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  loadingscreen.style.display = "flex";
+  loadingbutton.style.display = "none";
+  const loadingImages = [
+    loading0,
+    loading10,
+    loading20,
+    loading30,
+    loading40,
+    loading50,
+    loading60,
+    loading70,
+    loading80,
+    loading90,
+    loading100,
+  ];
+  function preloadImages(images) {
+    return Promise.all(
+      images.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
 
-                    img.onload = resolve;
-                    img.onerror = reject;
+          img.onload = resolve;
+          img.onerror = reject;
 
-                    img.src = src;
-                });
-            })
-        );
+          img.src = src;
+        });
+      }),
+    );
+  }
 
-    }
+  preloadImages(loadingImages).then(() => {
+    let index = 0;
 
-    preloadImages(loadingImages).then(() => {
+    const interval = setInterval(() => {
+      loadingImage.src = loadingImages[index];
 
-        let index = 0;
+      index++;
 
-        const interval = setInterval(() => {
+      if (index >= loadingImages.length) {
+        clearInterval(interval);
+      }
+    }, 500);
+    const inter = setTimeout(() => {
+      loadingImage.style.height = "600px";
+      loadingbutton.style.display = "block";
+    }, 6000);
+  });
 
-            loadingImage.src = loadingImages[index];
-
-            index++;
-
-            if (index >= loadingImages.length) {
-                clearInterval(interval);
-            }
-
-        }, 500);
-        const inter = setTimeout(() => {
-            loadingImage.style.height = "600px";
-            loadingbutton.style.display = "block";
-        }, 6000)
-
-    });
-
-    loadingbutton.onclick = () => {
-        homee.style.display = "none";
-        level13();
-    }
+  loadingbutton.onclick = () => {
+    homee.style.display = "none";
+    level13();
+  };
 }
 
-export { level13index,level13 };
+export { level13index, level13 };
