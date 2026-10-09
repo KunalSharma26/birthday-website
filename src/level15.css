@@ -1,0 +1,90 @@
+.levelfifteenheader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: red;
+    height: 100px;
+    padding-top: 10px;
+}
+.levelfifteenheadercontentone{
+    font-size: 2rem;
+}
+.levelfifteenheadercontenttwo{
+    font-size: 1.2rem;
+}
+.fifteenmain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.letter{
+    margin-top: 50px;
+    height: 500px;
+    cursor: pointer;
+}
+.letter-content {
+    position: relative;
+    width: min(85%, 600px);
+    min-height: 350px;
+    margin: 40px auto;
+    padding: 45px 40px;
+
+    /* Aged parchment */
+    background:
+        radial-gradient(ellipse at 10% 15%, rgba(130, 83, 35, 0.12), transparent 35%),
+        radial-gradient(ellipse at 90% 85%, rgba(130, 83, 35, 0.14), transparent 40%),
+        linear-gradient(135deg, #f4e5c5, #e8d3a6 50%, #f1dfba);
+
+    color: #4b3020;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.9;
+    letter-spacing: 0.3px;
+
+    border: 1px solid rgba(112, 75, 39, 0.35);
+    border-radius: 3px;
+
+    box-shadow:
+        0 12px 30px rgba(0, 0, 0, 0.2),
+        inset 0 0 35px rgba(120, 75, 30, 0.12);
+
+    box-sizing: border-box;
+}
+
+/* Decorative inner border */
+.letter-content::before {
+    content: "";
+    position: absolute;
+    inset: 12px;
+    border: 1px solid rgba(112, 75, 39, 0.25);
+    pointer-events: none;
+}
+
+/* Letter heading */
+.letter-content h2 {
+    text-align: center;
+    font-family: "Palatino Linotype", Palatino, serif;
+    font-size: 28px;
+    font-weight: normal;
+    margin: 0 0 25px;
+    color: #693c29;
+}
+
+/* Body text */
+.letter-content p {
+    margin: 0 0 18px;
+}
+
+/* Sign-off */
+.letter-content .signature {
+    text-align: right;
+    margin-top: 35px;
+    font-style: italic;
+    font-size: 21px;
+}
+.fifteencandle{
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+

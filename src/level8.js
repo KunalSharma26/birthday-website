@@ -12,7 +12,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate,savegamestate } from "./gamestate";
+import { gamestate, savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -45,138 +45,140 @@ let candledisplay = document.querySelector(".level-eight-candle");
 let eightbacktomain = document.querySelector(".eightbacktomain");
 let candlebutton = document.querySelector(".leveleightcandlebutton");
 
-function level8(){
-    loadingscreen.style.display = "none";
-    levelone.style.display = "none";
-    leveltwo.style.display = "none";
-    levelthree.style.display = "none";
-    levelfour.style.display = "none";
-    levelfive.style.display = "none";
-    levelten.style.display="none";
-    levelsix.style.display = "none";
-    levelseven.style.display="none";
-    leveleight.style.display="flex";
-    levelnine.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    leveleight.style.flexDirection="column";
-    main.style.display="flex";
-    candledisplay.style.display="none";
-    eightbacktomain.style.display="none";
-    form.addEventListener("submit",(event)=>{
-        event.preventDefault();
-        if (
-            input.value === "iloveyou" ||
-            input.value === "I love you" ||
-            input.value === "i love you" ||
-            input.value === "I LOVE YOU" ||
-            input.value === "I Love You"
-        ){
-            main.style.display="none";
-            candledisplay.style.display="flex";
-        }
-        form.reset();
-    })
-    candlebutton.addEventListener("click",()=>{
+function level8() {
+  loadingscreen.style.display = "none";
+  levelone.style.display = "none";
+  leveltwo.style.display = "none";
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelten.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "flex";
+  levelnine.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  leveleight.style.flexDirection = "column";
+  main.style.display = "flex";
+  candledisplay.style.display = "none";
+  eightbacktomain.style.display = "none";
+}
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (
+    input.value === "iloveyou" ||
+    input.value === "I love you" ||
+    input.value === "i love you" ||
+    input.value === "I LOVE YOU" ||
+    input.value === "I Love You"
+  ) {
+    main.style.display = "none";
+    candledisplay.style.display = "flex";
+  }
+  form.reset();
+});
+candlebutton.addEventListener("click", () => {
+  if (gamestate.levelscleared[7] == 8) {
+    eightbacktomain.style.display = "flex";
 
-        if (gamestate.levelscleared[7] == 8) {
-            eightbacktomain.style.display="flex";
-            eightbacktomain.addEventListener("click", () => {
-                leveleight.style.display = "none";
-                home();
-            })
-            return;
-        }
-        gamestate.currentlevel++;
-        gamestate.unlockedlevels.push(9);
-        gamestate.levelscleared.push(8);
-        gamestate.candles++;
-        savegamestate();
-        eightbacktomain.style.display = "flex";
-        eightbacktomain.addEventListener("click", () => {
-            leveleight.style.display = "none";
-            home();
+    return;
+  }
+  gamestate.currentlevel++;
+  gamestate.unlockedlevels.push(9);
+  gamestate.levelscleared.push(8);
+  gamestate.candles++;
+  savegamestate();
+  eightbacktomain.style.display = "flex";
+});
+eightbacktomain.addEventListener("click", () => {
+  leveleight.style.display = "none";
+  home();
+});
+
+function level8index() {
+  loadingscreen.style.display = "none";
+  levelone.style.display = "none";
+  leveltwo.style.display = "none";
+  levelten.style.display = "none";
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  loadingscreen.style.display = "flex";
+  loadingbutton.style.display = "none";
+  const loadingImages = [
+    loading0,
+    loading10,
+    loading20,
+    loading30,
+    loading40,
+    loading50,
+    loading60,
+    loading70,
+    loading80,
+    loading90,
+    loading100,
+  ];
+  function preloadImages(images) {
+    return Promise.all(
+      images.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+
+          img.onload = resolve;
+          img.onerror = reject;
+
+          img.src = src;
         });
-    })
+      }),
+    );
+  }
 
+  preloadImages(loadingImages).then(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      loadingImage.src = loadingImages[index];
+
+      index++;
+
+      if (index >= loadingImages.length) {
+        clearInterval(interval);
+      }
+    }, 500);
+    const inter = setTimeout(() => {
+      loadingImage.style.height = "600px";
+      loadingbutton.style.display = "block";
+    }, 6000);
+  });
+
+  loadingbutton.onclick = () => {
+    homee.style.display = "none";
+    level8();
+  };
 }
 
-function level8index(){
-    loadingscreen.style.display = "none";
-    levelone.style.display = "none";
-    leveltwo.style.display = "none";
-    levelten.style.display="none";
-    levelthree.style.display = "none";
-    levelfour.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    loadingscreen.style.display = "flex";
-    loadingbutton.style.display = "none";
-    const loadingImages = [loading0, loading10, loading20, loading30, loading40, loading50, loading60, loading70, loading80, loading90, loading100];
-    function preloadImages(images) {
-        return Promise.all(
-            images.map(src => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
-
-                    img.onload = resolve;
-                    img.onerror = reject;
-
-                    img.src = src;
-                });
-            })
-        );
-
-    }
-
-    preloadImages(loadingImages).then(() => {
-
-        let index = 0;
-
-        const interval = setInterval(() => {
-
-            loadingImage.src = loadingImages[index];
-
-            index++;
-
-            if (index >= loadingImages.length) {
-                clearInterval(interval);
-            }
-
-        }, 500);
-        const inter = setTimeout(() => {
-            loadingImage.style.height = "600px";
-            loadingbutton.style.display = "block";
-        }, 6000)
-
-    });
-
-    loadingbutton.onclick = () => {
-        homee.style.display = "none";
-        level8();
-    }
-}
-
-export {level8,level8index};
+export { level8, level8index };

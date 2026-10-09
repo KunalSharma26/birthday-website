@@ -11,7 +11,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate,savegamestate } from "./gamestate";
+import { gamestate, savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -43,127 +43,132 @@ let leveleighteen = document.querySelector(".level18");
 let levelnineteen = document.querySelector(".level19");
 let levelfinal = document.querySelector(".levelfinal");
 
-function level3(){
-    candlemain.style.display = "none";
-    backtomain.style.display="none";
-    levelone.style.display="none";
-    form.style.display = "flex";
-    leveltwo.style.display="none";
-    levelfour.style.display="none";
-    levelfive.style.display="none";
-    levelsix.style.display="none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    loadingscreen.style.display = "none";
-    levelthree.style.display="flex";
-    levelthree.style.flexDirection="column";
-    form.addEventListener("submit",(event)=>{
-        event.preventDefault();
-        if(Number(valuee.value)==20231019){
-            candlemain.style.display="flex";
-            form.style.display = "none";
-        }
-        form.reset();
-    })
-    candle.addEventListener("click",()=>{
-        if(gamestate.levelscleared[2]==3){
-            backtomain.style.display = "flex";
-            backtomain.addEventListener("click",()=>{
-                home();
-            })
-            return;
-        }
-        
-        gamestate.currentlevel++;
-        gamestate.unlockedlevels.push(4);
-        gamestate.levelscleared.push(3);
-        gamestate.candles++;
-        savegamestate();
-        backtomain.style.display = "flex";
-        backtomain.addEventListener("click", () => {
-            home();
+function level3() {
+  candlemain.style.display = "none";
+  backtomain.style.display = "none";
+  levelone.style.display = "none";
+  form.style.display = "flex";
+  leveltwo.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  loadingscreen.style.display = "none";
+  levelthree.style.display = "flex";
+  levelthree.style.flexDirection = "column";
+}
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+  if (Number(valuee.value) == 20231019) {
+    candlemain.style.display = "flex";
+    form.style.display = "none";
+  }
+  form.reset();
+});
+candle.addEventListener("click", () => {
+  if (gamestate.levelscleared[2] == 3) {
+    backtomain.style.display = "flex";
+
+    return;
+  }
+
+  gamestate.currentlevel++;
+  gamestate.unlockedlevels.push(4);
+  gamestate.levelscleared.push(3);
+  gamestate.candles++;
+  savegamestate();
+  backtomain.style.display = "flex";
+});
+backtomain.addEventListener("click", () => {
+  home();
+});
+
+function level3index() {
+  leveltwo.style.display = "none";
+  levelfour.style.display = "none";
+  levelone.style.display = "none";
+  levelthree.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  loadingscreen.style.display = "flex";
+  loadingbutton.style.display = "none";
+  const loadingImages = [
+    loading0,
+    loading10,
+    loading20,
+    loading30,
+    loading40,
+    loading50,
+    loading60,
+    loading70,
+    loading80,
+    loading90,
+    loading100,
+  ];
+  function preloadImages(images) {
+    return Promise.all(
+      images.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+
+          img.onload = resolve;
+          img.onerror = reject;
+
+          img.src = src;
         });
-    })
+      }),
+    );
+  }
+
+  preloadImages(loadingImages).then(() => {
+    let index = 0;
+
+    const interval = setInterval(() => {
+      loadingImage.src = loadingImages[index];
+
+      index++;
+
+      if (index >= loadingImages.length) {
+        clearInterval(interval);
+      }
+    }, 500);
+    const inter = setTimeout(() => {
+      loadingImage.style.height = "600px";
+      loadingbutton.style.display = "block";
+    }, 6000);
+  });
+
+  loadingbutton.onclick = () => {
+    homee.style.display = "none";
+    level3();
+  };
 }
 
-function level3index(){
-    leveltwo.style.display = "none";
-    levelfour.style.display = "none";
-    levelone.style.display = "none";
-    levelthree.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    loadingscreen.style.display="flex";
-    loadingbutton.style.display="none";
-    const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
-    function preloadImages(images) {
-        return Promise.all(
-            images.map(src => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
-
-                    img.onload = resolve;
-                    img.onerror = reject;
-
-                    img.src = src;
-                });
-            })
-        );
-
-    }
-
-    preloadImages(loadingImages).then(() => {
-
-        let index = 0;
-
-        const interval = setInterval(() => {
-
-            loadingImage.src = loadingImages[index];
-
-            index++;
-
-            if (index >= loadingImages.length) {
-                clearInterval(interval);
-            }
-
-        }, 500);
-        const inter = setTimeout(()=>{
-            loadingImage.style.height="600px";
-            loadingbutton.style.display="block";
-        },6000)
-
-    });
-
-    loadingbutton.onclick=()=>{
-        homee.style.display="none";
-        level3();
-    }
-}
-
-export { level3, level3index}
+export { level3, level3index };

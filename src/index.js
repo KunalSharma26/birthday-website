@@ -23,6 +23,7 @@ import { level11, level11index } from "./level11.js";
 import { level12, level12index } from "./level12.js";
 import { level13, level13index } from "./level13.js";
 import { level14,level14index } from "./level14.js";
+import { level15,level15index } from "./level15.js";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -129,7 +130,7 @@ function index() {
 }
 
 // index();
-// home();
+home();
 // level1();
 // level1index();
 // level2index();
@@ -156,5 +157,7 @@ function index() {
 // level12();
 // level13();
 // level13index();
-level14();
+// level14();
 // level14index();
+// level15();
+// level15index();

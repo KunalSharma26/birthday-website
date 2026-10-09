@@ -3,7 +3,7 @@ import "./levelone.css";
 import { home } from "./home";
 let candle = document.querySelector(".levelone-main-button");
 let levelonebutton = document.querySelector(".levelone-button");
-import loading0 from "../assets/images/loading/0_.png"
+import loading0 from "../assets/images/loading/0_.png";
 import loading10 from "../assets/images/loading/10_.png";
 import loading20 from "../assets/images/loading/20_.png";
 import loading30 from "../assets/images/loading/30_.png";
@@ -14,7 +14,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate,savegamestate } from "./gamestate";
+import { gamestate, savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -39,119 +39,120 @@ let levelseventeen = document.querySelector(".level17");
 let leveleighteen = document.querySelector(".level18");
 let levelnineteen = document.querySelector(".level19");
 let levelfinal = document.querySelector(".levelfinal");
-function level1(){
-    loadingscreen.style.display="none";
-    leveltwo.style.display = "none";
-    levelthree.style.display="none";
-    levelfour.style.display="none";
-    levelfive.style.display="none";
-    levelsix.style.display="none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    levelone.style.display="flex";
-    levelonebutton.style.display="none";
-    candle.addEventListener("click",()=>{
-        if(gamestate.levelscleared[0]==1){
-            levelonebutton.style.display="block";
-            levelonebutton.addEventListener("click", () => {
-                levelone.style.display = "none";
-                home();
-            });
-            return;
-        }
-        gamestate.currentlevel++;
-        gamestate.levelscleared.push(1);
-        gamestate.unlockedlevels.push(2);
-        gamestate.candles++;
-        savegamestate();
-        levelonebutton.style.display="block";
-        levelonebutton.addEventListener("click",()=>{
-            levelone.style.display="none";
-            home();
-        })
-    })
+function level1() {
+  loadingscreen.style.display = "none";
+  leveltwo.style.display = "none";
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  levelone.style.display = "flex";
+  levelonebutton.style.display = "none";
 }
-function level1index(){
-    leveltwo.style.display = "none";
-    levelfour.style.display = "none";
-    levelone.style.display = "none";
-    levelthree.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display="none";
-    levelten.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    loadingscreen.style.display="flex";
-    loadingbutton.style.display="none";
-    const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
-    function preloadImages(images) {
-        return Promise.all(
-            images.map(src => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
+candle.addEventListener("click", () => {
+  if (gamestate.levelscleared[0] == 1) {
+    levelonebutton.style.display = "block";
 
-                    img.onload = resolve;
-                    img.onerror = reject;
+    return;
+  }
+  gamestate.currentlevel++;
+  gamestate.levelscleared.push(1);
+  gamestate.unlockedlevels.push(2);
+  gamestate.candles++;
+  savegamestate();
+  levelonebutton.style.display = "block";
+});
+levelonebutton.addEventListener("click", () => {
+  levelone.style.display = "none";
+  home();
+});
+function level1index() {
+  leveltwo.style.display = "none";
+  levelfour.style.display = "none";
+  levelone.style.display = "none";
+  levelthree.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  levelten.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  loadingscreen.style.display = "flex";
+  loadingbutton.style.display = "none";
+  const loadingImages = [
+    loading0,
+    loading10,
+    loading20,
+    loading30,
+    loading40,
+    loading50,
+    loading60,
+    loading70,
+    loading80,
+    loading90,
+    loading100,
+  ];
+  function preloadImages(images) {
+    return Promise.all(
+      images.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
 
-                    img.src = src;
-                });
-            })
-        );
+          img.onload = resolve;
+          img.onerror = reject;
 
-    }
+          img.src = src;
+        });
+      }),
+    );
+  }
 
-    preloadImages(loadingImages).then(() => {
+  preloadImages(loadingImages).then(() => {
+    let index = 0;
 
-        let index = 0;
+    const interval = setInterval(() => {
+      loadingImage.src = loadingImages[index];
 
-        const interval = setInterval(() => {
+      index++;
 
-            loadingImage.src = loadingImages[index];
+      if (index >= loadingImages.length) {
+        clearInterval(interval);
+      }
+    }, 500);
+    const inter = setTimeout(() => {
+      loadingImage.style.height = "600px";
+      loadingbutton.style.display = "block";
+    }, 6000);
+  });
 
-            index++;
-
-            if (index >= loadingImages.length) {
-                clearInterval(interval);
-            }
-
-        }, 500);
-        const inter = setTimeout(()=>{
-            loadingImage.style.height="600px";
-            loadingbutton.style.display="block";
-        },6000)
-
-    });
-
-    loadingbutton.onclick=()=>{
-        homee.style.display="none";
-        level1();
-    }
-
+  loadingbutton.onclick = () => {
+    homee.style.display = "none";
+    level1();
+  };
 }
 
-
-
-export {level1, level1index}
+export { level1, level1index };

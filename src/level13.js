@@ -75,39 +75,36 @@ function level13() {
   question3.style.display = "none";
   candle.style.display = "none";
   thirteenbacktomain.style.display = "none";
-  correct1.addEventListener("click", () => {
-    question1.style.display = "none";
-    question2.style.display = "flex";
-  });
-  correct2.addEventListener("click", () => {
-    question2.style.display = "none";
-    question3.style.display = "flex";
-  });
-  correct3.addEventListener("click", () => {
-    question3.style.display = "none";
-    candle.style.display = "flex";
-  });
-  candle.addEventListener("click", () => {
-    if (gamestate.levelscleared[12] == 13) {
-      thirteenbacktomain.style.display = "flex";
-      thirteenbacktomain.addEventListener("click", () => {
-        levelthirteen.style.display = "none";
-        home();
-      });
-      return;
-    }
-    gamestate.currentlevel++;
-    gamestate.unlockedlevels.push(14);
-    gamestate.levelscleared.push(13);
-    gamestate.candles++;
-    savegamestate();
-    thirteenbacktomain.style.display = "flex";
-    thirteenbacktomain.addEventListener("click", () => {
-      levelthirteen.style.display = "none";
-      home();
-    });
-  });
 }
+correct1.addEventListener("click", () => {
+  question1.style.display = "none";
+  question2.style.display = "flex";
+});
+correct2.addEventListener("click", () => {
+  question2.style.display = "none";
+  question3.style.display = "flex";
+});
+correct3.addEventListener("click", () => {
+  question3.style.display = "none";
+  candle.style.display = "flex";
+});
+candle.addEventListener("click", () => {
+  if (gamestate.levelscleared[12] == 13) {
+    thirteenbacktomain.style.display = "flex";
+
+    return;
+  }
+  gamestate.currentlevel++;
+  gamestate.unlockedlevels.push(14);
+  gamestate.levelscleared.push(13);
+  gamestate.candles++;
+  savegamestate();
+  thirteenbacktomain.style.display = "flex";
+});
+thirteenbacktomain.addEventListener("click", () => {
+  levelthirteen.style.display = "none";
+  home();
+});
 
 function level13index() {
   loadingscreen.style.display = "none";

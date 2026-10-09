@@ -16,7 +16,7 @@ Levels -
     Level 12 - Her-O-Meter
     Level 13 - Quiz about us
     Level 14 - generate poloroid picture
-    Level 15 - Photo puzzle
+    Level 15 - Letter from the future
     Level 16 - wikipedia page about her
     Level 17 - Decoration
     Level 18 - Build a Cake

@@ -1,5 +1,5 @@
 import "./leveltwo.css";
-import loading0 from "../assets/images/loading/0_.png"
+import loading0 from "../assets/images/loading/0_.png";
 import loading10 from "../assets/images/loading/10_.png";
 import loading20 from "../assets/images/loading/20_.png";
 import loading30 from "../assets/images/loading/30_.png";
@@ -11,7 +11,7 @@ import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
-import { gamestate,savegamestate} from "./gamestate";
+import { gamestate, savegamestate } from "./gamestate";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -52,166 +52,171 @@ let levelseventeen = document.querySelector(".level17");
 let leveleighteen = document.querySelector(".level18");
 let levelnineteen = document.querySelector(".level19");
 let levelfinal = document.querySelector(".levelfinal");
-function level2(){
-    levelthree.style.display="none";
-    levelfour.style.display="none";
-    levelfive.style.display="none";
-    levelsix.style.display="none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelone.style.display="none";
-    levelnine.style.display="none";
-    levelten.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    leveltwomainbutton.style.display="none";
-    leveltwomain.style.display="none";
-    loadingscreen.style.display="none";
-    leveltwo.style.display="flex";
-    leveltwo.style.flexDirection="column";
-    punjab.style.display="flex";
-    himachal.style.display="flex";
-    bihar.style.display="flex";
-    westbengal.style.display="flex";
-    maharashtra.style.display="flex";
-    pondicherry.style.display="flex";
-    punjab.addEventListener("click",()=>{
-        punjabtext.style.display = "flex";
-        let interval = setTimeout(()=>{
-            punjabtext.style.display = "none";
-        },4000);
-    })
-    bihar.addEventListener("click",()=>{
-        bihartext.style.display="flex";
-        let interval = setTimeout(() => {
-            bihartext.style.display="none";
-        }, 4000);
-    })
-    westbengal.addEventListener("click",()=>{
-        westbengaltext.style.display="flex";
-        let interval = setTimeout(()=>{
-            westbengaltext.style.display="none";
-        },4000);
-    })
-    maharashtra.addEventListener("click",()=>{
-        maharashtratext.style.display="flex";
-        let interval = setTimeout(() => {
-            maharashtratext.style.display="none";
-        }, 4000);
-    })
-    pondicherry.addEventListener("click",()=>{
-        pondicherrytext.style.display="flex";
-        let interval = setTimeout(() => {
-            pondicherrytext.style.display="none";
-        }, 4000);
-    })
-    himachal.addEventListener("click",()=>{
-        himachaltext.style.display="flex";
-        punjab.style.display="none";
-        himachal.style.display="none";
-        bihar.style.display="none";
-        westbengal.style.display="none";
-        maharashtra.style.display="none";
-        pondicherry.style.display="none";
-        
-        leveltwomain.style.display="flex";
-        let interval = setTimeout(() => {
-            himachaltext.style.display="none";
-        }, 4000);
-    })
-    leveltwocandlebutton.addEventListener("click",()=>{
-        if(gamestate.levelscleared[1]==2){
-            leveltwomainbutton.style.display = "flex";
-            leveltwomainbutton.addEventListener("click",()=>{
-                home();
-            })
-            return;
-        }
-        
-        gamestate.currentlevel++;
-        gamestate.unlockedlevels.push(3);
-        gamestate.levelscleared.push(2);
-        gamestate.candles++;
-        savegamestate();
-        leveltwomainbutton.style.display = "flex";
-        leveltwomainbutton.addEventListener("click", () => {
-            home();
+function level2() {
+  levelthree.style.display = "none";
+  levelfour.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelone.style.display = "none";
+  levelnine.style.display = "none";
+  levelten.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  leveltwomainbutton.style.display = "none";
+  leveltwomain.style.display = "none";
+  loadingscreen.style.display = "none";
+  leveltwo.style.display = "flex";
+  leveltwo.style.flexDirection = "column";
+  punjab.style.display = "flex";
+  himachal.style.display = "flex";
+  bihar.style.display = "flex";
+  westbengal.style.display = "flex";
+  maharashtra.style.display = "flex";
+  pondicherry.style.display = "flex";
+}
+punjab.addEventListener("click", () => {
+  punjabtext.style.display = "flex";
+  let interval = setTimeout(() => {
+    punjabtext.style.display = "none";
+  }, 4000);
+});
+bihar.addEventListener("click", () => {
+  bihartext.style.display = "flex";
+  let interval = setTimeout(() => {
+    bihartext.style.display = "none";
+  }, 4000);
+});
+westbengal.addEventListener("click", () => {
+  westbengaltext.style.display = "flex";
+  let interval = setTimeout(() => {
+    westbengaltext.style.display = "none";
+  }, 4000);
+});
+maharashtra.addEventListener("click", () => {
+  maharashtratext.style.display = "flex";
+  let interval = setTimeout(() => {
+    maharashtratext.style.display = "none";
+  }, 4000);
+});
+pondicherry.addEventListener("click", () => {
+  pondicherrytext.style.display = "flex";
+  let interval = setTimeout(() => {
+    pondicherrytext.style.display = "none";
+  }, 4000);
+});
+himachal.addEventListener("click", () => {
+  himachaltext.style.display = "flex";
+  punjab.style.display = "none";
+  himachal.style.display = "none";
+  bihar.style.display = "none";
+  westbengal.style.display = "none";
+  maharashtra.style.display = "none";
+  pondicherry.style.display = "none";
+
+  leveltwomain.style.display = "flex";
+  let interval = setTimeout(() => {
+    himachaltext.style.display = "none";
+  }, 4000);
+});
+leveltwocandlebutton.addEventListener("click", () => {
+  if (gamestate.levelscleared[1] == 2) {
+    leveltwomainbutton.style.display = "flex";
+
+    return;
+  }
+
+  gamestate.currentlevel++;
+  gamestate.unlockedlevels.push(3);
+  gamestate.levelscleared.push(2);
+  gamestate.candles++;
+  savegamestate();
+  leveltwomainbutton.style.display = "flex";
+});
+leveltwomainbutton.addEventListener("click", () => {
+  home();
+});
+function level2index() {
+  leveltwo.style.display = "none";
+  levelfour.style.display = "none";
+  levelone.style.display = "none";
+  levelthree.style.display = "none";
+  levelfive.style.display = "none";
+  levelsix.style.display = "none";
+  levelseven.style.display = "none";
+  leveleight.style.display = "none";
+  levelnine.style.display = "none";
+  leveleleven.style.display = "none";
+  leveltwelve.style.display = "none";
+  levelthirteen.style.display = "none";
+  levelfourteen.style.display = "none";
+  levelfifteen.style.display = "none";
+  levelsixteen.style.display = "none";
+  levelseventeen.style.display = "none";
+  leveleighteen.style.display = "none";
+  levelnineteen.style.display = "none";
+  levelfinal.style.display = "none";
+  loadingscreen.style.display = "flex";
+  loadingbutton.style.display = "none";
+  const loadingImages = [
+    loading0,
+    loading10,
+    loading20,
+    loading30,
+    loading40,
+    loading50,
+    loading60,
+    loading70,
+    loading80,
+    loading90,
+    loading100,
+  ];
+  function preloadImages(images) {
+    return Promise.all(
+      images.map((src) => {
+        return new Promise((resolve, reject) => {
+          const img = new Image();
+
+          img.onload = resolve;
+          img.onerror = reject;
+
+          img.src = src;
         });
-    })
-}
-function level2index(){
-    leveltwo.style.display = "none";
-    levelfour.style.display = "none";
-    levelone.style.display = "none";
-    levelthree.style.display = "none";
-    levelfive.style.display = "none";
-    levelsix.style.display = "none";
-    levelseven.style.display="none";
-    leveleight.style.display="none";
-    levelnine.style.display="none";
-    leveleleven.style.display="none";
-    leveltwelve.style.display="none";
-    levelthirteen.style.display="none";
-    levelfourteen.style.display = "none";
-    levelfifteen.style.display = "none";
-    levelsixteen.style.display = "none";
-    levelseventeen.style.display = "none";
-    leveleighteen.style.display = "none";
-    levelnineteen.style.display = "none";
-    levelfinal.style.display = "none";
-    loadingscreen.style.display="flex";
-    loadingbutton.style.display="none";
-    const loadingImages = [loading0,loading10,loading20,loading30,loading40,loading50,loading60,loading70,loading80,loading90,loading100];
-    function preloadImages(images) {
-        return Promise.all(
-            images.map(src => {
-                return new Promise((resolve, reject) => {
-                    const img = new Image();
+      }),
+    );
+  }
 
-                    img.onload = resolve;
-                    img.onerror = reject;
+  preloadImages(loadingImages).then(() => {
+    let index = 0;
 
-                    img.src = src;
-                });
-            })
-        );
+    const interval = setInterval(() => {
+      loadingImage.src = loadingImages[index];
 
-    }
+      index++;
 
-    preloadImages(loadingImages).then(() => {
+      if (index >= loadingImages.length) {
+        clearInterval(interval);
+      }
+    }, 500);
+    const inter = setTimeout(() => {
+      loadingImage.style.height = "600px";
+      loadingbutton.style.display = "block";
+    }, 6000);
+  });
 
-        let index = 0;
-
-        const interval = setInterval(() => {
-
-            loadingImage.src = loadingImages[index];
-
-            index++;
-
-            if (index >= loadingImages.length) {
-                clearInterval(interval);
-            }
-
-        }, 500);
-        const inter = setTimeout(()=>{
-            loadingImage.style.height="600px";
-            loadingbutton.style.display="block";
-        },6000)
-
-    });
-
-    loadingbutton.onclick=()=>{
-        homee.style.display="none";
-        level2();
-    }
+  loadingbutton.onclick = () => {
+    homee.style.display = "none";
+    level2();
+  };
 }
 
-export {level2index, level2}
+export { level2index, level2 };
