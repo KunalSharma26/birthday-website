@@ -1,0 +1,46 @@
+.level-eighteen-header{
+    height: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+.level-eighteen-header-content-one{
+    font-size: 2rem;
+}
+.level-eighteen-header-content-two{
+    font-size: 1.2rem;
+}
+
+.eighteenmain{
+    display: grid;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    padding-top: 100px;
+    
+}
+.eighteenheading{
+    grid-column: 1/4;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2rem;
+}
+
+.cake{
+    height: 400px;
+    cursor: pointer;
+}
+
+.eighteencandlemain{
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    gap: 50px;
+    align-items: center;
+}
+
+.eighteencandle{
+    cursor: pointer;
+}

@@ -1,9 +1,13 @@
 let gamestate = {
-    currentlevel: 7,
-    unlockedlevels: [1,2,3,4,5,6,7],
-    levelscleared: [1,2,3,4,5,6],
-    candles: 6
+    currentlevel: 18,
+    unlockedlevels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+    levelscleared: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+    candles: 17
 };
+let cake = {
+    currentcake: ""
+}
+const savedcake = localStorage.getItem("cake");
 const savedgamestate = localStorage.getItem("gamestate");
 
 if (savedgamestate) {
@@ -12,5 +16,11 @@ if (savedgamestate) {
 function savegamestate() {
     localStorage.setItem("gamestate", JSON.stringify(gamestate));
 }
-export { gamestate,savegamestate };
+if(savedcake){
+    Object.assign(cake, JSON.parse(savedcake));
+}
+function savecakestate(){
+    localStorage.setItem("cake",JSON.stringify(cake));
+}
+export { gamestate,savegamestate,cake,savecakestate };
 

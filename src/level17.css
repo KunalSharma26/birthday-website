@@ -1,0 +1,79 @@
+.level-seventeen-header{
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    height: 100px;
+    padding-top: 10px;
+    align-items: center;
+}
+.level-seventeen-header-content-one{
+    font-size: 2rem;
+}
+.level-seventeen-header-content-two{
+    font-size: 1.2rem;
+}
+.seventeenmain{
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+
+}
+.decoration{
+    width: 100vw;
+    position: absolute;
+    top: 0%;
+    background-color: antiquewhite;
+    z-index: -1;
+}
+.fairy{
+    position: absolute;
+    height: 800px;
+    top: 100px;
+    left: 0%;
+}
+.balloon{
+    position: absolute;
+    height: 500px;
+    top: 1000px;
+    left: 60%;
+}
+.gift{
+    position: absolute;
+    height: 400px;
+    top: 1000px;
+    left: 10%;
+}
+.addbanner{
+    position: absolute;
+    top: 150px;
+}
+.addlights{
+    position: absolute;
+    top: 500px;
+}
+.addballoons{
+    position: absolute;
+    top:800px   ;
+}
+.addgift{
+    position: absolute;
+    top: 900px;
+}
+.meow{
+    position: absolute;
+    height: 200px;
+    top: 1200px;
+}
+.addmeow{
+    position: absolute;
+    top: 1000px;
+}
+.seventeencandle{
+    position: absolute;
+    cursor: pointer;
+    top: 600px;
+}
+.seventeenbacktomain{
+    position: absolute;
+    top: 1050px;
+}

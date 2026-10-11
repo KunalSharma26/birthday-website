@@ -21,6 +21,8 @@ import { level13index } from "./level13.js";
 import { level14index } from "./level14.js";
 import { level15, level15index } from "./level15.js";
 import { level16index } from "./level16.js";
+import { level17index } from "./level17.js";
+import { level18index } from "./level18.js";
 
 import "./home.css";
 
@@ -40,6 +42,8 @@ let thirteen = document.querySelector(".level-thirteen-button");
 let fourteen = document.querySelector(".level-fourteen-button");
 let fifteen = document.querySelector(".level-fifteen-button");
 let sixteen = document.querySelector(".level-sixteen-button");
+let seventeen = document.querySelector(".level-seventeen-button");
+let eighteen = document.querySelector(".level-eighteen-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -188,6 +192,15 @@ fifteen.addEventListener("click",()=>{
 sixteen.addEventListener("click",()=>{
   homee.style.display="none";
   level16index();
+})
+
+seventeen.addEventListener("click",()=>{
+  homee.style.display="none";
+  level17index();
+})
+eighteen.addEventListener("click",()=>{
+  homee.style.display="none";
+  level18index();
 })
 
 export { home };
