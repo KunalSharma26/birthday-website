@@ -20,6 +20,7 @@ import { level12index } from "./level12.js";
 import { level13index } from "./level13.js";
 import { level14index } from "./level14.js";
 import { level15, level15index } from "./level15.js";
+import { level16index } from "./level16.js";
 
 import "./home.css";
 
@@ -38,6 +39,7 @@ let twelve = document.querySelector(".level-twelve-button");
 let thirteen = document.querySelector(".level-thirteen-button");
 let fourteen = document.querySelector(".level-fourteen-button");
 let fifteen = document.querySelector(".level-fifteen-button");
+let sixteen = document.querySelector(".level-sixteen-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -181,6 +183,11 @@ fourteen.addEventListener("click",()=>{
 fifteen.addEventListener("click",()=>{
     homee.style.display="none";
     level15index();
+})
+
+sixteen.addEventListener("click",()=>{
+  homee.style.display="none";
+  level16index();
 })
 
 export { home };
