@@ -24,6 +24,7 @@ import { level16index } from "./level16.js";
 import { level17index } from "./level17.js";
 import { level18index } from "./level18.js";
 import { level19index } from "./level19.js";
+import { levelfinalindex } from "./final.js";
 
 import "./home.css";
 
@@ -46,6 +47,7 @@ let sixteen = document.querySelector(".level-sixteen-button");
 let seventeen = document.querySelector(".level-seventeen-button");
 let eighteen = document.querySelector(".level-eighteen-button");
 let nineteen = document.querySelector(".level-nineteen-button");
+let final = document.querySelector(".final");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -94,6 +96,7 @@ function home() {
   leveleighteen.style.display = "none";
   levelnineteen.style.display = "none";
   levelfinal.style.display = "none";
+  final.style.display="none";
 
   loadingscreen.style.display = "none";
 
@@ -116,6 +119,7 @@ function home() {
   homecurrentcandle.textContent = `Candles Collected: ${gamestate.candles}`;
   if(gamestate.currentlevel==20){
     homecurrentlevel.textContent=`Current Level: BIRTHDAYYYY`;
+    final.style.display="flex";
     return;
   }
   homecurrentlevel.textContent = `Current Level: ${gamestate.currentlevel}`;
@@ -213,6 +217,11 @@ eighteen.addEventListener("click",()=>{
 nineteen.addEventListener("click",()=>{
   homee.style.display="none";
   level19index();
+})
+
+final.addEventListener("click",()=>{
+  homee.style.display="none";
+  levelfinalindex();
 })
 
 export { home };

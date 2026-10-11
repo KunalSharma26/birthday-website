@@ -1,11 +1,11 @@
 let gamestate = {
-    currentlevel: 18,
-    unlockedlevels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
-    levelscleared: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
-    candles: 17
+    currentlevel: 19,
+    unlockedlevels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
+    levelscleared: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
+    candles: 18
 };
 let cake = {
-    currentcake: ""
+    currentcake: "chocolate"
 }
 const savedcake = localStorage.getItem("cake");
 const savedgamestate = localStorage.getItem("gamestate");

@@ -58,7 +58,7 @@
     background-color: red;
 }
 .fourorange:active{
-    background-color: orange;
+    background-color: orange !important;
 }
 .correct-four-one:active{
     background-color: green;

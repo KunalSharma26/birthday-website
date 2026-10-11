@@ -1,0 +1,46 @@
+.decorationfinal{
+    position: absolute;
+    background-color: antiquewhite;
+    width: 100vw;
+    top: 0%;
+    z-index: -1;
+}
+
+.fairyfinal{
+    position: absolute;
+    height: 800px;
+    left: 0%;
+}
+.balloonfinal {
+    position: absolute;
+    height: 500px;
+    top: 900px;
+    left: 60%;
+}
+.giftfinal {
+    position: absolute;
+    height: 400px;
+    top: 900px;
+    left: 10%;
+}
+.meowfinal {
+    position: absolute;
+    height: 200px;
+    left: 40%;
+    top: 1150px;
+}
+.cakefinal{
+    position: absolute;
+    left: 34%;
+    height: 500px;
+    top: 600px;
+}
+.returnhome{
+    width: 100px;
+    height: 40px;
+    align-items: center;
+    position: absolute;
+    left: 46%;
+    top: 5%;
+    z-index: 2;
+}

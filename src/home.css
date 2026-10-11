@@ -158,3 +158,10 @@
 .level1{
     display: none;
 }
+
+.final{
+    position: absolute;
+    z-index: 2;
+    left: 75%;
+    top: 10%;
+}
