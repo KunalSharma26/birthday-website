@@ -27,6 +27,7 @@ import { level15,level15index } from "./level15.js";
 import { level16,level16index } from "./level16.js";
 import { level17,level17index } from "./level17.js";
 import { level18,level18index } from "./level18.js";
+import { level19,level19index } from "./level19.js";
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -168,5 +169,7 @@ function index() {
 // level16index();
 // level17();
 // level17index();
-level18();
+// level18();
 // level18index();
+level19();
+// level19index();

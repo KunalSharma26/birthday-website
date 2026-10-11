@@ -48,6 +48,8 @@ let candlemain = document.querySelector(".eighteencandlemain");
 let candle = document.querySelector(".eighteencandle");
 let eighteenbacktomain = document.querySelector(".eighteenbacktomain");
 
+
+
 function level18() {
   loadingscreen.style.display = "none";
   levelone.style.display = "none";

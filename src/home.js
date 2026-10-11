@@ -23,6 +23,7 @@ import { level15, level15index } from "./level15.js";
 import { level16index } from "./level16.js";
 import { level17index } from "./level17.js";
 import { level18index } from "./level18.js";
+import { level19index } from "./level19.js";
 
 import "./home.css";
 
@@ -44,6 +45,7 @@ let fifteen = document.querySelector(".level-fifteen-button");
 let sixteen = document.querySelector(".level-sixteen-button");
 let seventeen = document.querySelector(".level-seventeen-button");
 let eighteen = document.querySelector(".level-eighteen-button");
+let nineteen = document.querySelector(".level-nineteen-button");
 let homee = document.querySelector(".home");
 
 let homecurrentlevel = document.querySelector(".home-info-current-level");
@@ -110,8 +112,13 @@ function home() {
     }
   });
 
-  homecurrentlevel.textContent = `Current Level: ${gamestate.currentlevel}`;
+
   homecurrentcandle.textContent = `Candles Collected: ${gamestate.candles}`;
+  if(gamestate.currentlevel==20){
+    homecurrentlevel.textContent=`Current Level: BIRTHDAYYYY`;
+    return;
+  }
+  homecurrentlevel.textContent = `Current Level: ${gamestate.currentlevel}`;
 }
 
 one.addEventListener("click", () => {
@@ -201,6 +208,11 @@ seventeen.addEventListener("click",()=>{
 eighteen.addEventListener("click",()=>{
   homee.style.display="none";
   level18index();
+})
+
+nineteen.addEventListener("click",()=>{
+  homee.style.display="none";
+  level19index();
 })
 
 export { home };
