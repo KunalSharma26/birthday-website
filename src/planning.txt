@@ -26,3 +26,11 @@ Levels -
 Final stage - after all candles collected, there's a cake
 
 Timestamp 1 = 3hours
+
+Things left to do - 
+1. CSS on each website
+2. Level 1 content
+3. Level 9 content
+4. Level 19 - more gifts
+5. Birthday celebration final edit
+6. Background sound on each page
