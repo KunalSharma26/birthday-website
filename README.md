@@ -1,5 +1,5 @@
 # Birthday Website
-A birthday website for my dear cookie ***Samreedhi***
+A birthday website for my wuvly cookie ***Samreedhi***
 <br>
 A very heppy 19th Birthday Samreedhi!!! I learnt a lot making this project, so thankss, indirectly you taught me a lot lol.
 <br>
