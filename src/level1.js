@@ -1,7 +1,7 @@
 let levelone = document.querySelector(".level1");
-import "./levelone.css";
+import "./level1.css";
 import { home } from "./home";
-let candle = document.querySelector(".levelone-main-button");
+let candle = document.querySelector(".levelonecandle");
 let levelonebutton = document.querySelector(".levelone-button");
 import loading0 from "../assets/images/loading/0_.png";
 import loading10 from "../assets/images/loading/10_.png";

@@ -1,8 +1,8 @@
 let gamestate = {
-    currentlevel: 19,
-    unlockedlevels: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19],
-    levelscleared: [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18],
-    candles: 18
+    currentlevel: 1,
+    unlockedlevels: [1],
+    levelscleared: [],
+    candles: 0
 };
 let cake = {
     currentcake: "chocolate"

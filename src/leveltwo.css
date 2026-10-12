@@ -1,14 +1,26 @@
 .level2{
     display: none;
+    background-color: #F7F1E8;
+
 }
 .level-two-header{
-    background-color: red;
+
     width: 100vw;
     height: 100px;
     display: flex;
     justify-content: center;
+    color: #3F263F;
+    justify-content: center;
     align-items: center;
     font-size: 2rem;
+    margin-top: 20px;
+}
+.level-two-header-content{
+    background-color: #D8C9DC;
+    padding: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-radius: 15px;
 }
 .level-two-map{
     width: 70vw;
@@ -26,38 +38,61 @@
     height: 50px;
     width: 250px;
     flex-shrink: 0;
-    background-color: red;
     display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFCF7;
+    color: #3F263F;
+    border: 1px solid #E8B7C4;
+    border-radius: 10px;
 }
 .punjab{
     position: absolute;
-    top: 43%;
-    left: 15%;
+    top: 44%;
+    left: 17%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #E8B7C4;
 }
 .bihar{
     position: absolute;
-    top: 55%;
-    left: 42%;
+    top: 59%;
+    left: 44%;
+    padding: 10px;
+        border-radius: 5px;
+        background-color: #E8B7C4;
 }
 .himachal{
     position: absolute;
     top: 37%;
     left: 30%;
+    padding: 10px;
+        border-radius: 5px;
+        background-color: #E8B7C4;
 }
 .west-bengal{
     position: absolute;
-    top: 73%;
+    top: 75%;
     left: 50%;
+    padding: 10px;
+        border-radius: 5px;
+        background-color: #E8B7C4;
 }
 .maharashtra{
     position: absolute;
-    top: 95%;
+    top: 98%;
     left: 9%;
+    padding: 10px;
+        border-radius: 5px;
+        background-color: #E8B7C4;
 }
 .pondicherry{
     position: absolute;
     top: 125%;
     left: 40%;
+    padding: 10px;
+        border-radius: 5px;
+        background-color: #E8B7C4;
 }
 .punjab, .bihar, .west-bengal, .maharashtra, .himachal, .pondicherry{
     cursor: pointer;
@@ -93,12 +128,42 @@
     top: 130%;
     left: 35%;
 }
+.level-two-main-button{
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 20px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+.level-two-main-button:hover{
+    background-color: #6B5268;
+}
 .leveltwocandlebutton{
-    height: 300px;
-    width: 250px;
     cursor: pointer;
-    border: none;
-    background: none;
+    border:1px solid #D5A84B;
+    border-radius: 25px;
+    padding-left: 15px;
+    transition: 0.25s ease-in;
+
+}
+.leveltwocandlebutton:hover{
+    transform: scale(1.15);
+}
+
+.abc{
     position: absolute;
-  
+    width: 400px;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    max-width: 100%;
+    padding: 20px;
+    overflow-wrap: break-word;
+    white-space: normal;
+    background-color: #FFFCF7;
+        color: #3F263F;
+        border: 1px solid #E8B7C4;
+        border-radius: 10px;
 }

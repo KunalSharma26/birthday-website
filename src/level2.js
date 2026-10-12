@@ -129,6 +129,7 @@ himachal.addEventListener("click", () => {
   }, 4000);
 });
 leveltwocandlebutton.addEventListener("click", () => {
+  console.log("two");
   if (gamestate.levelscleared[1] == 2) {
     leveltwomainbutton.style.display = "flex";
 
@@ -143,6 +144,7 @@ leveltwocandlebutton.addEventListener("click", () => {
   leveltwomainbutton.style.display = "flex";
 });
 leveltwomainbutton.addEventListener("click", () => {
+  leveltwo.style.display="none";
   home();
 });
 function level2index() {
