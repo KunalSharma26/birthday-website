@@ -21,6 +21,7 @@ A very heppy 19th Birthday Samreedhi!!! I learnt a lot making this project, so t
 - Day ended - 14th October 2026
 - Lines of Code - 6774
 <br>
+
 ### About the Architecture
 
 
