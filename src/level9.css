@@ -2,8 +2,18 @@
     display: flex;
     flex-direction: column;
     height: 100px;
+    width: 50vw;
+    border-radius: 10px;
+    margin-top: 10px;
     padding-top: 10px;
-    background-color: red;
+    background-color: #D8C9DC;
+    align-items: center;
+    color: #3F263F;
+}
+.level9{
+    background-color: #F7F1E8;
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -47,6 +57,7 @@
     align-items: center;
     margin: 20px;
     position: relative;
+
 }
 
 
@@ -74,15 +85,22 @@
 /* FRONT */
 
 .card-content-one {
-    background-color: red;
+    border: 3px solid #C5AFC9;
+    background-color: #FFFCF7;
+    font-size: 4rem;
+    color: #3F263F;
 }
+
 
 
 /* BACK */
 
 .card-content-two {
-    background-color: blue;
+    background-color: #E8B7C4;
+    border: 3px solid #C5AFC9;
     transform: rotateY(180deg);
+    color: #3F263F;
+    font-size: 2rem;
 }
 
 
@@ -98,4 +116,14 @@
 
 .levelninecandle{
     cursor: pointer;
+}
+.ninebacktomain {
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.ninebacktomain:hover {
+    background-color: #6B5268;
 }
