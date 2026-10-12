@@ -146,12 +146,12 @@ function index() {
 // level4index();
 // level5index();
 // level5();
-level6index();
+// level6index();
 // level6();
 // level7index();
 // level7();
 // level8index();
-// level8();
+level8();
 // level9index();
 // level9();
 // level10index();

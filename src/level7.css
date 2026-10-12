@@ -1,11 +1,16 @@
 .level-seven-header{
     display: flex;
     height: 100px;
-    background-color: red;
+    background-color: #D8C9DC;
     align-items: center;
     padding-top: 10px;
+    color: #3F263F;
     flex-direction: column;
 
+}
+.level7{
+    background-color: #F7F1E8;
+    height: 100vh;
 }
 .level-seven-header-content-one{
     font-size: 2rem;
@@ -36,4 +41,17 @@
     justify-content: center;
     align-items: center;
     height: 30vw;
+}
+.sevenbacktomain {
+    position: absolute;
+    top: 50%;
+    left: 46.5%;
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.sevenbacktomain:hover {
+    background-color: #6B5268;
 }

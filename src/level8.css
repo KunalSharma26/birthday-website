@@ -3,9 +3,14 @@
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
     height: 100px;
 }   
+.level8 {
+    background-color: #F7F1E8;
+    height: 100vh;
+}
 
 .level-eight-header-content-one{
     font-size: 2rem;
@@ -23,6 +28,7 @@
 }
 .level-eight-main-content{
     font-size: 2rem;
+    color: #3F263F;
 }
 .eightform > input[type="text"]{
     height: 70px;
@@ -37,12 +43,29 @@
 }
 .leveleightcandlebutton{
     height: 400px;
-    width: 150px;
+    width: 400px;
     background:none;
     border: none;
     cursor: pointer;
     position: absolute;
     top: 19%;
-    left: 44%;
+    left: 38%;
+    transition: 0.25s ease-in;
 
+}
+.leveleightcandlebutton:hover{
+    transform: scale(1.15);
+}
+.eightbacktomain {
+    position: absolute;
+    top: 80%;
+    left: 46.5%;
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.eightbacktomain:hover {
+    background-color: #6B5268;
 }
