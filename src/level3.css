@@ -1,11 +1,13 @@
 .level3{
     display: none;
+    background-color: #F7F1E8;
 }
 
 .level-three-header{
     height: 100px;
     width: 100vw;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,10 +38,14 @@
     font-size: 2rem;
     margin-top: 20px;
     flex-direction: column;
+    color: #3F263F;
+    border: 3px solid #C5AFC9;
+    margin-bottom: 10px;
 }
 .level-three-image{
     height: 500px;
     width: 500px;
+    border-radius: 25px;
 }
 .level-three-candle{
     height:400px;
@@ -62,4 +68,25 @@
 #levelthreeform{
     height: 60px;
     width: 200px;
+    border: 3px solid #A9B8BE;
+    border-radius: 10px;
+    color: #3F263F;
+    font-size: 2rem;
+}
+.levelthreecandle{
+    cursor: pointer;
+    transition: 0.25s ease-in;
+    
+}
+.levelthreecandle:hover{
+    transform: scale(1.15);
+}
+.level-three-backtomain{
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+.level-three-backtomain:hover {
+    background-color: #6B5268;
 }

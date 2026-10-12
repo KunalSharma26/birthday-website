@@ -60,6 +60,7 @@ function level4() {
   levelseven.style.display = "none";
   levelnine.style.display = "none";
   levelten.style.display = "none";
+  leveleight.style.display="none";
   leveleleven.style.display = "none";
   leveltwelve.style.display = "none";
   levelthirteen.style.display = "none";
