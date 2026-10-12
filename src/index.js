@@ -142,11 +142,11 @@ function index() {
 // level2();
 // level3index();
 // level3();
-level4();
+// level4();
 // level4index();
 // level5index();
 // level5();
-// level6index();
+level6index();
 // level6();
 // level7index();
 // level7();
