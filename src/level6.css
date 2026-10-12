@@ -2,6 +2,14 @@
     animation: rotate 2s linear infinite;
 }
 
+
+.level6{
+    background-color: #F7F1E8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 @keyframes rotate{
     from{
         transform: rotate(0deg);
@@ -15,7 +23,11 @@
     align-items: center;
     padding-top: 10px;
     gap: 10px;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
+    width: 50vw;
+    border-radius: 25px;
+    margin-top: 10px;
 }
 
 .level-six-header-content-one{
@@ -36,26 +48,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: #3F263F;
     gap: 20px;
 }
 .sixbutton{
     height: 50px;
     width: 200px;
+    border-radius: 10px;
+    background-color: #FFFCF7;
+}
+.sixbutton:hover{
+    background-color: #C5AFC9;
 }
 .wrong:active{
-    background-color: red;
+    background-color: #D98B91;
 }
 .correct-six-one:active{
-    background-color: green;
+    background-color: #A8BFA3;
 }
 .correct-six-two:active{
-    background-color: green;
+    background-color: #A8BFA3;
 }
 .correct-six-three:active{
-    background-color: green;
+    background-color: #A8BFA3;
 }
 .correct-six-four:active{
-    background-color: green;
+    background-color: #A8BFA3;
 }
 .sixyay{
     font-size: 3rem;
@@ -69,9 +87,25 @@
 .levelsixcandlebutton{
     position: absolute;
     height: 400px;
-    width: 150px;
+    width:400px;
     background: none;
-    left: 66.5%;
+    left: 48%;
     cursor: pointer;
     border: none;
+    transition: 0.25s ease-in;
+}
+.levelsixcandlebutton:hover{
+    transform: scale(1.15);
+}
+.sixbacktomain{
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
+}
+.sixbacktomain:hover{
+    background-color: #6B5268;
 }

@@ -3,7 +3,7 @@
 }
 .level-five-header{
     height: 100px;
-    background-color: red;
+    background-color: #FF9100;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -17,13 +17,17 @@
 }
 .levelfivecandlebutton{
     height: 400px;
-    width: 150px;
+    width: 400px;
     position: absolute;
     top: 25%;
-    left: 44%;
+    left: 38%;
     border:none;
     background: none;
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.levelfivecandlebutton:hover{
+    transform: scale(1.15);
 }
 .levelfivecandledisplay{
     display: none;
@@ -39,4 +43,16 @@
     left: 91%;
     background:none;
     border: none;
+}
+.fivebacktomain{
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
+        position: absolute;
+        left: 46.5%;
+        top: 80%;
+}
+.fivebacktomain:hover{
+    background-color: #6B5268;
 }

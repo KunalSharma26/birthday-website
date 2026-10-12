@@ -13,6 +13,7 @@ import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
 import { gamestate, savegamestate } from "./gamestate";
+
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
 let website = document.querySelector(".website");
@@ -41,10 +42,13 @@ let levelfinal = document.querySelector(".levelfinal");
 
 import song1 from "../assets/audio/dracula.mp3";
 const songone = new Audio(song1);
+
 import song2 from "../assets/audio/505.mp3";
 const songtwo = new Audio(song2);
+
 import song3 from "../assets/audio/porcelainn.mp3";
 const songthree = new Audio(song3);
+
 let levelsixquestion = document.querySelector(".level-six-question-main");
 let levelsixquestionone = document.querySelector(".level-six-question-one");
 let levelsixquestiontwo = document.querySelector(".level-six-question-two");
@@ -63,7 +67,7 @@ function level6() {
   levelone.style.display = "none";
   leveltwo.style.display = "none";
   levelthree.style.display = "none";
-  songone.play();
+
   levelfour.style.display = "none";
   levelfive.style.display = "none";
   levelseven.style.display = "none";
@@ -80,6 +84,7 @@ function level6() {
   leveleighteen.style.display = "none";
   levelnineteen.style.display = "none";
   levelfinal.style.display = "none";
+
   levelsix.style.display = "flex";
   levelsixcandledisplay.style.display = "none";
   levelsix.style.flexDirection = "column";
@@ -89,24 +94,32 @@ function level6() {
   sixbacktomain.style.display = "none";
   levelsixquestion.style.display = "flex";
 }
+
 correctsixone.addEventListener("click", () => {
   levelsixquestionone.style.display = "none";
   songone.pause();
-  songtwo.play();
+  songtwo
+    .play()
+    .catch((error) => console.error("Song 2 playback failed:", error));
   levelsixquestiontwo.style.display = "flex";
 });
+
 correctsixtwo.addEventListener("click", () => {
   levelsixquestiontwo.style.display = "none";
   songtwo.pause();
-  songthree.play();
+  songthree
+    .play()
+    .catch((error) => console.error("Song 3 playback failed:", error));
   levelsixquestionthree.style.display = "flex";
 });
+
 correctsixthree.addEventListener("click", () => {
   levelsixquestionthree.style.display = "none";
   songthree.pause();
   levelsixquestion.style.display = "none";
   levelsixcandledisplay.style.display = "flex";
 });
+
 levelsixcandlebutton.addEventListener("click", () => {
   songone.pause();
   songone.currentTime = 0;
@@ -116,18 +129,21 @@ levelsixcandlebutton.addEventListener("click", () => {
 
   songthree.pause();
   songthree.currentTime = 0;
+
   if (gamestate.levelscleared[5] == 6) {
     sixbacktomain.style.display = "flex";
-
     return;
   }
+
   gamestate.currentlevel++;
   gamestate.unlockedlevels.push(7);
   gamestate.levelscleared.push(6);
   gamestate.candles++;
   savegamestate();
+
   sixbacktomain.style.display = "flex";
 });
+
 sixbacktomain.addEventListener("click", () => {
   levelsix.style.display = "none";
   home();
@@ -154,8 +170,10 @@ function level6index() {
   leveleighteen.style.display = "none";
   levelnineteen.style.display = "none";
   levelfinal.style.display = "none";
+
   loadingscreen.style.display = "flex";
   loadingbutton.style.display = "none";
+
   const loadingImages = [
     loading0,
     loading10,
@@ -169,6 +187,7 @@ function level6index() {
     loading90,
     loading100,
   ];
+
   function preloadImages(images) {
     return Promise.all(
       images.map((src) => {
@@ -196,7 +215,8 @@ function level6index() {
         clearInterval(interval);
       }
     }, 500);
-    const inter = setTimeout(() => {
+
+    setTimeout(() => {
       loadingImage.style.height = "600px";
       loadingbutton.style.display = "block";
     }, 6000);
@@ -204,6 +224,12 @@ function level6index() {
 
   loadingbutton.onclick = () => {
     homee.style.display = "none";
+
+    songone.currentTime = 0;
+    songone.play().catch((error) => {
+      console.error("Song 1 playback failed:", error);
+    });
+
     level6();
   };
 }
