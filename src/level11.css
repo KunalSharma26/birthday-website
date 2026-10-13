@@ -5,8 +5,13 @@
     align-items: center;
     height: 100px;
     width: 100vw;
-    background-color: red;
+    background-color: #D8C9DC;
     padding-top: 10px;
+    color: #3F263F;
+}
+.level11{
+    background-color: #F7F1E8;
+    height: 110vh;
 }
 .level-eleven-header-content-one{
     font-size: 2rem;
@@ -95,4 +100,14 @@
     position: absolute;
     top: 50%;
     left: 25%;
+}
+.elevenbacktomain {
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.elevenbacktomain:hover {
+    background-color: #6B5268;
 }
