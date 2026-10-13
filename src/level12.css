@@ -54,6 +54,10 @@
 }
 .twelvecandle{
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.twelvecandle:hover{
+    transform: scale(1.15);
 }
 .twelvebacktomain {
     background-color: #3F263F;

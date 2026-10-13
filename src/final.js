@@ -44,8 +44,9 @@ let redvelvet = document.querySelector(".redvelvetfinal");
 let chocolate = document.querySelector(".chocolatefinal");
 let butterscotch = document.querySelector(".butterscotchfinal");
 let returnhome = document.querySelector(".returnhome");
+const meowfinal = document.querySelector(".meowfinal");
 
-function final(){
+function final() {
   loadingscreen.style.display = "none";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -68,26 +69,32 @@ function final(){
   levelnineteen.style.display = "none";
   levelfinal.style.display = "flex";
 
-  levelfinal.style.flexDirection="column";
-  redvelvet.style.display="none";
-  chocolate.style.display="none";
-  butterscotch.style.display="none";
-  if(cake.currentcake=="chocolate"){
-    chocolate.style.display="flex";
+  levelfinal.style.flexDirection = "column";
+  redvelvet.style.display = "none";
+  chocolate.style.display = "none";
+  butterscotch.style.display = "none";
+  if (cake.currentcake == "chocolate") {
+    chocolate.style.display = "flex";
+  } else if (cake.currentcake == "butterscotch") {
+    butterscotch.style.display = "flex";
+  } else if (cake.currentcake == "redvelvet") {
+    redvelvet.style.display = "flex";
   }
-  else if(cake.currentcake=="butterscotch"){
-    butterscotch.style.display="flex";
-  }
-  else if(cake.currentcake=="redvelvet"){
-    redvelvet.style.display="flex";
-  }
+  meowfinal.currentTime = 0;
+  meowfinal.style.display = "flex";
+
+  meowfinal.play().catch((error) => {
+    console.error("Final video playback failed:", error);
+  });
 }
 
-returnhome.addEventListener("click",()=>{
-    console.log("slkdf");
-    levelfinal.style.display="none";
-    home();
-})
+returnhome.addEventListener("click", () => {
+  console.log("slkdf");
+  levelfinal.style.display = "none";
+  meowfinal.pause();
+  meowfinal.currentTime = 0;
+  home();
+});
 
 function levelfinalindex() {
   console.log("level15index called");

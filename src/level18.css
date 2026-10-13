@@ -1,10 +1,20 @@
 .level-eighteen-header{
     height: 100px;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 10px;
+    width: 50vw;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+.level18{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 .level-eighteen-header-content-one{
     font-size: 2rem;
@@ -31,6 +41,10 @@
 .cake{
     height: 400px;
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.cake:hover{
+    transform: scale(1.15);
 }
 
 .eighteencandlemain{
@@ -43,4 +57,18 @@
 
 .eighteencandle{
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.eighteencandle:hover{
+    transform: scale(1.15);
+}
+.eighteenbacktomain{
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+}
+.eighteenbacktomain:hover {
+    background-color: #6B5268;
 }

@@ -100,7 +100,7 @@ adddecoration.addEventListener("click", () => {
 addlights.addEventListener("click", () => {
   addlights.style.display = "none";
   lights.style.display = "flex";
-  decoration.style.backgroundColor = "antiquewhite";
+  decoration.style.backgroundColor = "#F7F1E8";
   addballoon.style.display = "flex";
 });
 
@@ -116,9 +116,18 @@ addgift.addEventListener("click", () => {
   addmeow.style.display = "flex";
 });
 
-addmeow.addEventListener("click", () => {
+addmeow.addEventListener("click", async () => {
   addmeow.style.display = "none";
   meow.style.display = "flex";
+
+  meow.currentTime = 0;
+
+  try {
+    await meow.play();
+  } catch (error) {
+    console.error("Meow playback failed:", error);
+  }
+
   candle.style.display = "flex";
 });
 candle.addEventListener("click", () => {

@@ -47,6 +47,26 @@
     position: absolute;
     top:75px;
     animation: candle-pop-out 1.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+    transition: 0.25s ease-in;
+}
+.nineteencandle:hover{
+    transform: scale(1.15);
+}
+.nineteencontainer{
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: #E9D8C6;
+    color: #29242A;
+    border: 1px solid #29242A;;
+    top: 20%;
+    left: 70%;
+    border-radius: 30px;
+    padding: 30px;
+    max-width: 100%;
+        overflow-wrap: break-word;
+        white-space: normal;
+    font-size: 1.2rem;
 }
 @keyframes candle-pop-out {
     0% {
@@ -73,19 +93,38 @@
 
     100% {
         opacity: 1;
-        transform: translate(-50%, -115px) scale(1);
+        transform: translate(-80%, -70px) scale(1);
     }
 }
 
-
+.level19{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .level-nineteen-header{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #D8C9DC;
+        color: #3F263F;
+        width: 50vw;
+        border-radius: 20px;
+        margin-top: 20px;
     padding-top: 10px;
     align-items: center;
     height: 100px;
+}
+.nineteenbacktomain {
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.nineteenbacktomain:hover {
+    background-color: #6B5268;
 }
 .level-nineteen-header-content-one{
     font-size: 2rem;

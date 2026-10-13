@@ -3,18 +3,24 @@
     border-radius: 10px;
     margin:10px;
     width: 50vw;
-    background-color: red;
+    background-color: #6E3511;
+    border: 1px solid #FCECD8;
+    color: #FCECD8;
     position:absolute ;
+    font-size: 1.2rem;
     animation:grow 0.6s ease-out;
 }
 
 .home-info{
     position: absolute;
-    background-color: red;
+    background-color: #6E3511;
+    color: #FCECD8;
     border-radius: 10px;
+    border: 1px solid #FCECD8;
     margin: 10px;
     height: 15vh;
-    width: 300px;
+    width: 350px;
+    font-size: 1.3rem;
     left: 60%;
     animation:grow 0.6s ease-out;
     padding: 20px;
@@ -31,7 +37,12 @@
 .home{
     display: none;
 }
-
+.final{
+    padding: 10px;
+    background-color: #FCECD8;
+    border-radius: 10px;
+    color: #6E3511;
+}
 .home-header-content{
     padding: 20px;
     font-size: 1.5rem;
@@ -50,8 +61,8 @@
 .levelbutton{
     height: 120px;
     width: 120px;
-    background: none;
-    border: none;
+    background: none !important;
+    border: none !important;
     cursor: pointer;
     position: absolute;
     top: 0%;

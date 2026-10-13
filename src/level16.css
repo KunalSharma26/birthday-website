@@ -4,8 +4,29 @@
     align-items: center;
     padding-top: 10px;
     height: 100px;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
+    width: 50vw;
+    border-radius: 15px;
+    margin-top: 20px;
 
+}
+.sixteenbacktomain {
+
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.sixteenbacktomain:hover {
+    background-color: #6B5268;
+}
+.level16{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .level-sixteen-header-content-one{
     font-size: 2rem;
@@ -38,7 +59,11 @@
     z-index: 2;
     top: 240px;
     animation: candle-emerge 1.2s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+    transition: 0.25s ease-in;
 
+}
+.sixteencandle:hover{
+    transform: scale(1.15);
 }
 @keyframes candle-emerge {
     0% {

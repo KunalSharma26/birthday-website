@@ -1,10 +1,19 @@
 .levelfourteenheader{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
+    width: 50vw;
     align-items: center;
     height: 100px;
     padding-top: 10px;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+.level14{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .levelfourteenheadercontentone{
     font-size: 2rem;
@@ -16,7 +25,7 @@
     position: absolute;
     height: 430px; 
     transform: rotate(-6.5deg); 
-    top: 18%; 
+    top: 19%; 
     left: 38%;
     z-index: -1;
     /* top: 65%; 
@@ -28,14 +37,14 @@
         height: 430px;
         transform: rotate(-6.5deg);
         display: none;
-        top: 19%;
+        top: 20%;
         left: 38%;
         z-index: -1;
         animation: polaroid-drop2 2.5s ease-in forwards;
 }
 @keyframes polaroid-drop2 {
     0% {
-        top: 19%;
+        top: 20%;
         left: 38%;
     }
 
@@ -56,7 +65,7 @@
 }
 @keyframes polaroid-drop {
     0% {
-        top: 18%;
+        top: 19%;
         left: 38%;
     }
 
@@ -91,20 +100,32 @@
 }
 .click14{
     position: absolute;
-    top: 50%;
-    left: 36%;
+    top: 51%;
+    left: 35.5%;
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
 }
+.click14:hover{
+    background-color: #6B5268;
+}
+
 .fourteencandle{
     position: absolute;
     display: none;
     left: 38%;
-    top: 19%;
+    top: 20.5%;
     z-index: -1;
     animation: polaroid-drop3 2.5s ease-in forwards;
+    transition: 0.25s ease-in;
+}
+.fourteencandle:hover{
+    transform: scale(1.15);
 }
 @keyframes polaroid-drop3 {
     0% {
-        top: 19%;
+        top: 20.5%;
         left: 38%;
     }
 
@@ -127,6 +148,13 @@
     position: absolute;
     top: 90%;
     left: 60%;
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
+}
+.fourteenbacktomain:hover {
+    background-color: #6B5268;
 }
 .fourteencandle{
     cursor: pointer;

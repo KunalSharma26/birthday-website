@@ -59,6 +59,10 @@ button:hover{
 }
 .thirteencandle{
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.thirteencandle:hover{
+    transform: scale(1.15);
 }
 .thirteenbacktomain{
     position: absolute;

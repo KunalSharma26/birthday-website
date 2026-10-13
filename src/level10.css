@@ -155,6 +155,10 @@
     left: 82%;
     cursor: pointer;
     animation: tencandlemove 2s ease forwards;
+    transition: 0.25s ease-in;
+}
+.tencandle:hover{
+    transform: scale(1.15);
 }
 @keyframes tencandlemove {
     from{

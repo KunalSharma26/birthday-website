@@ -2,12 +2,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: red;
+    background-color: #D8C9DC;
+    color: #3F263F;
     height: 100px;
     padding-top: 10px;
+    width: 50vw;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+.level15{
+    background-color: #F7F1E8;
+    display: flex;
+    height: 300vh;
+    flex-direction: column;
+    align-items: center;
 }
 .levelfifteenheadercontentone{
     font-size: 2rem;
+}
+.fifteenbacktomain{
+
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+.fifteenbacktomain:hover {
+    background-color: #6B5268;
 }
 .levelfifteenheadercontenttwo{
     font-size: 1.2rem;
@@ -85,6 +107,10 @@
 .fifteencandle{
     margin-top: 20px;
     cursor: pointer;
+    transition: 0.25s ease-in;
+}
+.fifteencandle:hover{
+    transform: scale(1.15);
 }
 
 

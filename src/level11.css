@@ -81,6 +81,10 @@
     top: 35%;
     left: 40%;
     animation: candlemove 1s ease forwards;
+    transition: 0.25s ease-in;
+}
+.elevencandle:hover{
+    transform: scale(1.15);
 }
 @keyframes candlemove {
     from{

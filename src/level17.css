@@ -1,10 +1,14 @@
 .level-seventeen-header{
     display: flex;
     flex-direction: column;
-    background-color: red;
+    background-color: #D8C9DC;
+        color: #3F263F;
     height: 100px;
     padding-top: 10px;
     align-items: center;
+}
+html{
+    background-color: #F7F1E8;
 }
 .level-seventeen-header-content-one{
     font-size: 2rem;
@@ -72,8 +76,37 @@
     position: absolute;
     cursor: pointer;
     top: 600px;
+    transition: 0.25s ease-in;
+}
+.seventeencandle:hover{
+    transform: scale(1.15);
 }
 .seventeenbacktomain{
     position: absolute;
     top: 1050px;
+}
+.addballoons,.addbanner,.addgift,.addlights,.addmeow,.seventeenbacktomain{
+    background-color: #3F263F;
+        color: #F7F1E8;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 40px;
+}
+.addballoons:hover{
+    background-color: #6B5268;
+}
+.addbanner:hover{
+    background-color: #6B5268;
+}
+.addmeow:hover {
+    background-color: #6B5268;
+}
+.addgift:hover {
+    background-color: #6B5268;
+}
+.addlights:hover {
+    background-color: #6B5268;
+}
+.seventeenbacktomain:hover {
+    background-color: #6B5268;
 }

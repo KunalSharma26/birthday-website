@@ -41,7 +41,7 @@
     position: absolute;
     top: 109%;
     left: 91%;
-    background:none;
+    background:none !important;
     border: none;
 }
 .fivebacktomain{
