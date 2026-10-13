@@ -3,10 +3,14 @@
     display: flex;
     flex-direction: column;
     padding-top: 10px;
-    background-color: red;
+    background-color: #D8C9DC;
     align-items: center;
+    color: #3F263F;
 
-
+}
+.level10{
+    background-color: #F7F1E8;
+    height: 100vh;
 }
 
 .level-ten-header-content-one{
@@ -171,4 +175,27 @@
     position: absolute;
     top: 92%;
     left: 92%;
+}
+.tencandlecontent,.chiccontent,.poloroidcontent,.phonecontent,.chococontent,.ninepotato{
+        height: 70px;
+        width: 250px;
+        flex-shrink: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        background-color: #FFFCF7;
+        color: #3F263F;
+        border: 1px solid #E8B7C4;
+        border-radius: 10px;
+}
+
+.tenbacktomain {
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.tenbacktomain:hover {
+    background-color: #6B5268;
 }
