@@ -9,6 +9,7 @@ import loading50 from "../assets/images/loading/50_.png";
 import loading60 from "../assets/images/loading/60_.png";
 import { home } from "./home";
 import loading70 from "../assets/images/loading/70_.png";
+import { playBackgroundMusic,pauseBackgroundMusic } from "./background1.js";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
@@ -63,6 +64,7 @@ let correctsixthree = document.querySelector(".correct-six-three");
 
 function level6() {
   console.log("LEVEL 6");
+  pauseBackgroundMusic();
   loadingscreen.style.display = "none";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -146,6 +148,7 @@ levelsixcandlebutton.addEventListener("click", () => {
 
 sixbacktomain.addEventListener("click", () => {
   levelsix.style.display = "none";
+  playBackgroundMusic();
   home();
 });
 

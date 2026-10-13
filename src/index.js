@@ -6,6 +6,7 @@ import loading30 from "../assets/images/loading/30_.png";
 import loading40 from "../assets/images/loading/40_.png";
 import loading50 from "../assets/images/loading/50_.png";
 import loading60 from "../assets/images/loading/60_.png";
+import { playBackgroundMusic } from "./background1.js";
 import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
@@ -130,6 +131,7 @@ function index() {
   });
 
   loadingbutton.onclick = () => {
+    playBackgroundMusic();
     home();
   };
 }

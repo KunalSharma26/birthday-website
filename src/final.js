@@ -7,6 +7,7 @@ import loading30 from "../assets/images/loading/30_.png";
 import loading40 from "../assets/images/loading/40_.png";
 import loading50 from "../assets/images/loading/50_.png";
 import loading60 from "../assets/images/loading/60_.png";
+import { playBackgroundMusic, pauseBackgroundMusic } from "./background1.js";
 import { home } from "./home";
 import loading70 from "../assets/images/loading/70_.png";
 import loading80 from "../assets/images/loading/80_.png";
@@ -47,6 +48,7 @@ let returnhome = document.querySelector(".returnhome");
 const meowfinal = document.querySelector(".meowfinal");
 
 function final() {
+  pauseBackgroundMusic();
   loadingscreen.style.display = "none";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -90,6 +92,7 @@ function final() {
 
 returnhome.addEventListener("click", () => {
   console.log("slkdf");
+  playBackgroundMusic();
   levelfinal.style.display = "none";
   meowfinal.pause();
   meowfinal.currentTime = 0;
