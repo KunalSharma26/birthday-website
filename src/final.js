@@ -14,6 +14,8 @@ import loading80 from "../assets/images/loading/80_.png";
 import loading90 from "../assets/images/loading/90_.png";
 import loading100 from "../assets/images/loading/100_.png";
 import { gamestate, savegamestate, cake, savecakestate } from "./gamestate";
+import vid1 from "../assets/images/vid1.mp4";
+import vid2 from "../assets/images/vid2.mp4";
 
 const loadingImage = document.querySelector(".loading-image");
 const loadingbutton = document.querySelector(".loading-button");
@@ -46,9 +48,15 @@ let chocolate = document.querySelector(".chocolatefinal");
 let butterscotch = document.querySelector(".butterscotchfinal");
 let returnhome = document.querySelector(".returnhome");
 const meowfinal = document.querySelector(".meowfinal");
+const finalVideo = document.querySelector("#final-video");
 
 function final() {
   pauseBackgroundMusic();
+  finalVideo.volume=1;
+  finalVideo.src = vid1;
+  finalVideo.controls = true;
+  finalVideo.playsInline = true;
+  finalVideo.muted = false;
   loadingscreen.style.display = "none";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -89,10 +97,32 @@ function final() {
     console.error("Final video playback failed:", error);
   });
 }
-
+finalVideo.addEventListener(
+  "ended",
+  function () {
+    finalVideo.pause();
+    finalVideo.currentTime = 0;
+    finalVideo.loop = false;
+    finalVideo.removeAttribute("src");
+    finalVideo.load();
+    finalVideo.src = vid2;
+    finalVideo.loop = true;
+    finalVideo.play();
+    finalVideo.volume=0.5;
+  },
+  { once: true },
+);
+finalVideo.play().catch((error) => {
+  console.log("Video playback blocked:", error);
+});
 returnhome.addEventListener("click", () => {
   console.log("slkdf");
   playBackgroundMusic();
+  finalVideo.pause();
+  finalVideo.currentTime = 0;
+  finalVideo.loop = false;
+  finalVideo.removeAttribute("src");
+  finalVideo.load();
   levelfinal.style.display = "none";
   meowfinal.pause();
   meowfinal.currentTime = 0;

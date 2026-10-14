@@ -1,10 +1,11 @@
 .decorationfinal{
     position: absolute;
-    background-color: antiquewhite;
     width: 100vw;
     top: 0%;
     z-index: -1;
 }
+
+
 
 .fairyfinal{
     position: absolute;
@@ -29,6 +30,14 @@
     left: 40%;
     top: 1150px;
 }
+#final-video{
+    position: absolute;
+    height: 500px;
+    width: 600px;
+    left: 30.5%;
+    top: 15%;
+}
+
 .cakefinal{
     position: absolute;
     left: 34%;
@@ -43,4 +52,32 @@
     left: 46%;
     top: 5%;
     z-index: 2;
+}
+.returnhome {
+    background-color: #3F263F;
+    color: #F7F1E8;
+    padding: 10px;
+    height: 60px;
+    left: 47%;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.returnhome:hover {
+    background-color: #6B5268;
+}
+.finalmain{
+    padding: 20px;
+    width: 700px;
+    background-color: #E9D8C6;
+    border: 1px solid black;
+    position: absolute;
+    top: 1450px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    left: 27.2%;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    white-space: normal;
+    padding-bottom: 50px;
 }
