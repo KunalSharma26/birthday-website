@@ -62,7 +62,7 @@ let levelfinal = document.querySelector(".levelfinal");
 let html = document.documentElement;
 
 function index() {
-  html.style.visibility="hidden";
+
   loadingscreen.style.display = "flex";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -113,8 +113,9 @@ function index() {
       }),
     );
   }
-  html.style.visibility="visible";
+
   preloadImages(loadingImages).then(() => {
+    html.style.visibility="visible";
     let index = 0;
 
     const interval = setInterval(() => {
