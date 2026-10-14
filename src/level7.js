@@ -80,7 +80,7 @@ function level7() {
     image.style.left = `${randomX}px`;
     image.style.top = `${randomY}px`;
 
-    const randomTime = 300 + Math.random() * 400;
+    const randomTime = 200 + Math.random() * 400;
 
     interval = setTimeout(moveCandle, randomTime);
   }
