@@ -1,4 +1,4 @@
-import backgroundSong from "../assets/audio/bg2.mp3";
+import backgroundSong from "../assets/audio/bg1.mp3";
 
 const backgroundMusic = new Audio(backgroundSong);
 
