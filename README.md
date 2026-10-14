@@ -19,7 +19,7 @@ A very heppy 19th Birthday Samreedhi!!! I learnt a lot making this project, so t
 ## Information About this Website
 - Day started - 27 September 2026
 - Day ended - 14th October 2026
-- Lines of Code - 6774
+- Lines of Code - 7630
 <br>
 
 ### About the Architecture
