@@ -59,8 +59,10 @@ let levelseventeen = document.querySelector(".level17");
 let leveleighteen = document.querySelector(".level18");
 let levelnineteen = document.querySelector(".level19");
 let levelfinal = document.querySelector(".levelfinal");
+let html = document.documentElement;
 
 function index() {
+  html.style.visibility="hidden";
   loadingscreen.style.display = "flex";
   levelone.style.display = "none";
   leveltwo.style.display = "none";
@@ -111,7 +113,7 @@ function index() {
       }),
     );
   }
-
+  html.style.visibility="visible";
   preloadImages(loadingImages).then(() => {
     let index = 0;
 
